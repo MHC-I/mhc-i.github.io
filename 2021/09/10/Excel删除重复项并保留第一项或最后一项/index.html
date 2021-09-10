@@ -18,9 +18,25 @@
   <meta name="author" content="CoCo">
   <meta name="keywords" content="">
   
-  <title>归档 - Iatrology</title>
+  <title>Excel删除重复项并保留第一项或最后一项 - Iatrology</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -48,7 +64,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -154,14 +170,51 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/archive.png') no-repeat center center;
+         style="background: url('/postimg/Excel%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9%E5%B9%B6%E4%BF%9D%E7%95%99%E7%AC%AC%E4%B8%80%E9%A1%B9%E6%88%96%E6%9C%80%E5%90%8E%E4%B8%80%E9%A1%B9.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="Excel删除重复项并保留第一项或最后一项">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-09-10 15:33" pubdate>
+        2021年9月10日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      206 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      2
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -174,58 +227,117 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 18 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/02/04/Parallels%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F%E6%97%A0%E6%B3%95%E6%A3%80%E6%B5%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%A7%A3%E5%86%B3/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Parallels安装镜像无法检测操作系统的解决</span>
-      <time style="float: right;">02-04</time>
-    </a>
-  
-    
-    <a href="/2021/02/03/Hexo%E5%A5%BD%E6%90%AD%E6%A1%A3Typora/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hexo好搭档Typora</span>
-      <time style="float: right;">02-03</time>
-    </a>
-  
-    
-    <a href="/2021/02/02/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%9C%A8Mac%E4%B8%8A%E5%AE%89%E8%A3%85Hexo%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0Coding/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">记一次在Mac上安装Hexo并部署到Coding</span>
-      <time style="float: right;">02-02</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Excel删除重复项并保留第一项或最后一项</h1>
+            
+            <div class="markdown-body">
+              <h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h2 id="保留最后一项"><a href="#保留最后一项" class="headerlink" title="保留最后一项"></a>保留最后一项</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">=<span class="hljs-built_in">COUNTIF</span>(<span class="hljs-symbol">A1</span>:$A$<span class="hljs-number">1000</span>,<span class="hljs-symbol">A1</span>)<br></code></pre></td></tr></table></figure>
 
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/archives/2021/02/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/archives/2021/02/">1</a><span class="page-number current">2</span>
-    </span>
-  </nav>
+<p>复制到后一列–&gt;下拉–&gt;筛选–&gt;选择不等于1的–&gt;删除</p>
+<h2 id="保留第一项"><a href="#保留第一项" class="headerlink" title="保留第一项"></a>保留第一项</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">=<span class="hljs-built_in">COUNTIF</span>($A$<span class="hljs-symbol">1:A1000</span>,<span class="hljs-symbol">A1000</span>)<br></code></pre></td></tr></table></figure>
 
+<p>复制到后一列–&gt;<strong>上拉</strong>–&gt;筛选–&gt;选择不等于1的–&gt;删除</p>
+<h1 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h1><img src="Excel删除重复项并保留第一项或最后一项/picture1-1260879.png" srcset="/img/loading.gif" lazyload alt="picture1" style="zoom:50%;" />
 
+<p>有这张图之后该公式就很容易理解，COUNTIF(A1:$A$1000,A1)，其实就是计算A1单元格后有多少个与其相同的单元格(包括A1)，那么当其值大于1的时候就表示其后还有与其相同的单元格，反之其值等于1就表示其后面没有与其相同的单元格，其就是最后一个单元格，最后筛选一下，删除不等于1的行后，剩下的就都是最后一个重复项。</p>
 
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Excel/">Excel</a>
+                    
+                  </div>
+                
+              </div>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/20/Aria2%E9%85%8D%E7%BD%AEssl%E5%B9%B6%E9%80%9A%E8%BF%87frp%E6%98%A0%E5%B0%84aria-rpc/">
+                        <span class="hidden-mobile">Aria2配置ssl并通过frp映射aria rpc</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"izp00VKkdIAMUnharsm0NQ0C-gzGzoHsz","appKey":"khbwEAKmRwRbExS1jxzgycae","placeholder":"说点什么","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -315,9 +427,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
