@@ -8,7 +8,7 @@
     <link href="/2021/09/10/Excel%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9%E5%B9%B6%E4%BF%9D%E7%95%99%E7%AC%AC%E4%B8%80%E9%A1%B9%E6%88%96%E6%9C%80%E5%90%8E%E4%B8%80%E9%A1%B9/"/>
     <url>/2021/09/10/Excel%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9%E5%B9%B6%E4%BF%9D%E7%95%99%E7%AC%AC%E4%B8%80%E9%A1%B9%E6%88%96%E6%9C%80%E5%90%8E%E4%B8%80%E9%A1%B9/</url>
     
-    <content type="html"><![CDATA[<h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h2 id="保留最后一项"><a href="#保留最后一项" class="headerlink" title="保留最后一项"></a>保留最后一项</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">=<span class="hljs-built_in">COUNTIF</span>(<span class="hljs-symbol">A1</span>:$A$<span class="hljs-number">1000</span>,<span class="hljs-symbol">A1</span>)<br></code></pre></td></tr></table></figure><p>复制到后一列–&gt;下拉–&gt;筛选–&gt;选择不等于1的–&gt;删除</p><h2 id="保留第一项"><a href="#保留第一项" class="headerlink" title="保留第一项"></a>保留第一项</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">=<span class="hljs-built_in">COUNTIF</span>($A$<span class="hljs-symbol">1:A1000</span>,<span class="hljs-symbol">A1000</span>)<br></code></pre></td></tr></table></figure><p>复制到后一列–&gt;<strong>上拉</strong>–&gt;筛选–&gt;选择不等于1的–&gt;删除</p><h1 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h1><img src="Excel删除重复项并保留第一项或最后一项/picture1-1260879.png" alt="picture1" style="zoom:50%;" /><p>有这张图之后该公式就很容易理解，COUNTIF(A1:$A$1000,A1)，其实就是计算A1单元格后有多少个与其相同的单元格(包括A1)，那么当其值大于1的时候就表示其后还有与其相同的单元格，反之其值等于1就表示其后面没有与其相同的单元格，其就是最后一个单元格，最后筛选一下，删除不等于1的行后，剩下的就都是最后一个重复项。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h2 id="保留最后一项"><a href="#保留最后一项" class="headerlink" title="保留最后一项"></a>保留最后一项</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">=<span class="hljs-built_in">COUNTIF</span>(<span class="hljs-symbol">A1</span>:$A$<span class="hljs-number">1000</span>,<span class="hljs-symbol">A1</span>)<br></code></pre></td></tr></table></figure><p>复制到后一列–&gt;下拉–&gt;筛选–&gt;选择不等于1的–&gt;删除</p><h2 id="保留第一项"><a href="#保留第一项" class="headerlink" title="保留第一项"></a>保留第一项</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">=<span class="hljs-built_in">COUNTIF</span>($A$<span class="hljs-symbol">1:A1000</span>,<span class="hljs-symbol">A1000</span>)<br></code></pre></td></tr></table></figure><p>复制到后一列–&gt;<strong>上拉</strong>–&gt;筛选–&gt;选择不等于1的–&gt;删除</p><h1 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h1><img src="/2021/09/10/Excel%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9%E5%B9%B6%E4%BF%9D%E7%95%99%E7%AC%AC%E4%B8%80%E9%A1%B9%E6%88%96%E6%9C%80%E5%90%8E%E4%B8%80%E9%A1%B9/picture1-1261456.png" class="" title="picture1"><p>有这张图之后该公式就很容易理解，COUNTIF(A1:$A$1000,A1)，其实就是计算A1单元格后有多少个与其相同的单元格(包括A1)，那么当其值大于1的时候就表示其后还有与其相同的单元格，反之其值等于1就表示其后面没有与其相同的单元格，其就是最后一个单元格，最后筛选一下，删除不等于1的行后，剩下的就都是最后一个重复项。</p>]]></content>
     
     
     <categories>
@@ -205,9 +205,9 @@
       
       <tag>Frp</tag>
       
-      <tag>Termux</tag>
-      
       <tag>Android</tag>
+      
+      <tag>Termux</tag>
       
     </tags>
     
