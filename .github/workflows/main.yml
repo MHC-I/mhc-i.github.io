@@ -1,0 +1,29 @@
+name: upload files to OSS
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build: 
+    
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: upload files to OSS
+      uses: fangbinwei/aliyun-oss-website-action@v1
+      with:
+          accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
+          bucket: wbc-wiki
+          endpoint: oss-cn-shenzhen.aliyuncs.com
+          # 全目录上传
+          folder: .
+          # 不上传的文件
+          exclude: |
+            .github/
+            .gitattributes
+            .git/
+            .MWebMetaData/
+            .DS_Store
+          
