@@ -16,6 +16,7 @@
       repo: '',
       // 开启侧边栏 
       loadSidebar: true,
+      sidebarDisplayLevel: 2,
       // 搜索
       search: {
         paths: 'auto',
@@ -38,15 +39,20 @@
       mermaidConfig: {
         querySelector: ".mermaid"
       },
+      //mermaid bug修复
+      plugins: [
+        function (hook) {
+          hook.doneEach(function () {
+            let mermaidConfig = {
+              querySelector: ".mermaid",
+            };
+            mermaid.run(mermaidConfig);
+          });
+        },
+      ],
+      
     }
   </script>
-  <!-- mermaid绘图 -->
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true });
-    window.mermaid = mermaid;
-  </script>
-  <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- 搜索 -->
@@ -57,5 +63,12 @@
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <!-- 侧边栏折叠 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- mermaid绘图 -->
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+  <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
 </body>
 </html>
