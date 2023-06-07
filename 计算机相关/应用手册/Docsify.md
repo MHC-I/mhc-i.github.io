@@ -44,5 +44,6 @@ docsify serve docs
 | [docsify-beian](https://github.com/HerbertHe/docsify-beian) | 备案号显示 |
 | [docsify-dark-mode](https://github.com/Plugin-contrib/docsify-plugin/tree/master/packages/docsify-dark-mode) | 暗黑模式 |
 | [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code) | 允许复制代码到剪切板 |
+| [mermaid-docsify](https://github.com/Leward/mermaid-docsify) | mermaid绘图 |
 
 ## 三、部署
