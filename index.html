@@ -7,13 +7,10 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="stylesheet" href="//unpkg.com/mermaid/dist/mermaid.min.css" />
-   <!-- 暗黑模式 -->
-  <link 
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
-    title="docsify-darklight-theme"
-    type="text/css"
+  <!-- 暗黑模式 -->
+  <link
+   rel="stylesheet"
+   href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"
   />
   </head>
 <body>
@@ -42,30 +39,23 @@
       },
       // 设置文档名称
       name: 'A SURGEON.',
-      //mermaid绘图
-      plugins: [
-        function (hook, vm) {
-          hook.ready(function () {
-            mermaid.initialize({ startOnLoad: false });
-          });
-          hook.doneEach(function () {
-            mermaid.init(undefined, '.mermaid');
-          });
-        }
-      ],
-      markdown: {
-        renderer: {
-          code: function (code, lang) {
-            var html = '';
-            if (code.match(/^sequenceDiagram/) || code.match(/^graph/) || code.match(/^gantt/)) {
-              html = '<div class="mermaid">' + code + '</div>';
-            }
-            var hl = Prism.highlight(code, Prism.languages[lang] || Prism.languages.markup);
-            return html + '<pre v-pre data-lang="' + lang + '"><code class="lang-' + lang + '">' + hl + '</code></pre>';
-          }
+      //暗黑模式
+      darkMode: {
+        dark: {
+          background: "#1c2022",
+          toggleBtnBg: "#34495e",
+          textColor: "#b4b4b4"
+        },
+        light: {
+          background: "white",
+          toggleBtnBg: "var(--theme-color)",
+          textColor: "var(--theme-color)"
         }
       },
-      //
+      //mermaid绘图
+      mermaidConfig: {
+        querySelector: ".mermaid"
+      },
     }
   </script>
   <!-- Docsify v4 -->
@@ -78,12 +68,14 @@
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <!-- 侧边栏折叠 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-  <!-- mermaid绘图 -->
-  <script type="text/javascript" src="//unpkg.com/mermaid/dist/mermaid.min.js"></script>
   <!-- 暗黑模式 -->
-  <script 
-  src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
-  type="text/javascript">
+  <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+  <!-- mermaid绘图 -->
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
   </script>
+  <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
 </body>
 </html>
