@@ -1,9 +1,19 @@
-- name: upload files to OSS
-  uses: fangbinwei/aliyun-oss-website-action@v1
-  with:
-      accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
-      accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
-      bucket: wbc-wiki
-      # use your own endpoint
-      endpoint: oss-cn-shenzhen.aliyuncs.com
-      folder: /
+name: deploy vuepress
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build: 
+    
+    runs-on: ubuntu-latest
+    steps:
+    - name: upload files to OSS
+      uses: fangbinwei/aliyun-oss-website-action@v1
+      with:
+          accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
+          bucket: wbc-wiki
+          endpoint: wbc-wiki.oss-cn-shenzhen.aliyuncs.com
+          folder: /
