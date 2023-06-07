@@ -9,6 +9,10 @@ jobs:
     
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+      with:
+          repository: MHC-I/mhc-i.github.io/
+          fetch-depth: 0
     - name: upload files to OSS
       uses: fangbinwei/aliyun-oss-website-action@v1
       with:
