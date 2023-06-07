@@ -15,6 +15,6 @@ jobs:
           accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
           accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
           bucket: wbc-wiki
-          endpoint: oss-cn-shenzhen.aliyuncs.com
+          endpoint: wbc-wiki.oss-cn-shenzhen.aliyuncs.com
           folder: /
           
