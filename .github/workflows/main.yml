@@ -16,5 +16,10 @@ jobs:
           accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
           bucket: wbc-wiki
           endpoint: oss-cn-shenzhen.aliyuncs.com
+          # 全目录上传
           folder: .
+          # 不上传的文件
+          exclude: |
+            .github/
+            .gitattributes
           
