@@ -63,6 +63,26 @@
     src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
     type="text/javascript">
   </script>
+  <script src="theme.js"></script>
+  <script>
+    function move() {
+      document.getElementsByClassName('sidebar')[0].setAttribute('id', 'sidebar-full')
+      document.getElementById('sidebar-full').appendChild(document.getElementById('docsify-darklight-theme'))
+      var button = document.getElementById('docsify-darklight-theme')
+      button.style.position = 'fixed'
+      button.style.left = '10px'
+      button.style.bottom = '58px'
+      button.style.top = 'auto'
+      button.style.width = '18px'
+      button.style.height = '18px'
+    }
+    var refreshId = setInterval(function () {
+      if (null != document.getElementById('docsify-darklight-theme')) {
+        move();
+        clearInterval(refreshId);
+      }
+    }, 100);
+</script>
   <!-- mermaid绘图 -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
