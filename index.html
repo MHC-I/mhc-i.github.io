@@ -7,14 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <!-- 暗黑模式 -->
-  <link 
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
-    title="docsify-darklight-theme"
-    type="text/css"
-  />
-  </head>
+</head>
 <body>
   <div id="app"></div>
   <script>
@@ -41,7 +34,6 @@
       },
       // 设置文档名称
       name: 'A SURGEON.',
-      //暗黑模式
       //mermaid绘图
       mermaidConfig: {
         querySelector: ".mermaid"
@@ -58,31 +50,6 @@
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <!-- 侧边栏折叠 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-  <!-- 暗黑模式 -->
-  <script 
-    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
-    type="text/javascript">
-  </script>
-  <script src="theme.js"></script>
-  <script>
-    function move() {
-      document.getElementsByClassName('sidebar')[0].setAttribute('id', 'sidebar-full')
-      document.getElementById('sidebar-full').appendChild(document.getElementById('docsify-darklight-theme'))
-      var button = document.getElementById('docsify-darklight-theme')
-      button.style.position = 'fixed'
-      button.style.left = '10px'
-      button.style.bottom = '58px'
-      button.style.top = 'auto'
-      button.style.width = '18px'
-      button.style.height = '18px'
-    }
-    var refreshId = setInterval(function () {
-      if (null != document.getElementById('docsify-darklight-theme')) {
-        move();
-        clearInterval(refreshId);
-      }
-    }, 100);
-</script>
   <!-- mermaid绘图 -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
