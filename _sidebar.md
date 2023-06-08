@@ -17,8 +17,11 @@
     * 🧰 应用手册
         * [Docsify](/计算机相关/应用手册/Docsify.md)
         * [Git](/计算机相关/应用手册/Git.md)
+        * [Github Action](/计算机相关/应用手册/Github_Action.md)
     * 🚀 代码学习
-    * 🐬 Linux相关
+    * 🐬 Linux
+    * 🍎 Apple
+        * [MacOS](/计算机相关/Apple/MacOS)
 * 🏞 生活记录
     *  📽 观影
     *  📚 阅读

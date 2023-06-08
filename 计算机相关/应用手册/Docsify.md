@@ -33,7 +33,49 @@ docsify serve docs
 
 ## 二、优化
 
-优化主要通过直接修改index.html来实现，例如引入插件、CSS文件，全程不需要通过npm安装插件，所以整个过程操作起来非常简单明了。
+### Docsify 加速
+
+Docsify 主要引用了`docsify.min.js`、`vue.css`两个文件，包括插件也是通过引入JS文件来实现的，由于国内网络的特殊原因，Docsify打开的速度会比较慢（即使是在套CDN的情况下，可能是unpkg的速度不太好，我测试时Mermaid插件加载完基本要8秒左右）。解决这个问题可以直接将JS和CSS文件放到Docsify文件夹中，直接从自己的网站中加载（现在网站基本能在1秒内加载完成）。
+
+> 注意：将Docsify放在本地的时候一定要放`docsify.min.js`，而不是`docsify.js`，否则会一直在Loading，当时这个问题我尝试了大半夜才解决。
+
+在Docsify文件夹（就是一般而言的/docs文件夹）下新建`js`和`css`两个文件夹，将`docsify.min.js`和`vue.css`两个文件放入对应文件夹中，再按以下方法修改`index.html`文件（主要就是修改引入两个文件的地方）。[docsify.min.js](https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js)和[vue.css](https://cdn.jsdelivr.net/npm/docsify/themes/vue.css)可以点击链接到jsdelivr下载最新版的。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+ <!-- 修改这里，引入本地CSS -->
+  <link rel="stylesheet" href="./css/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      // 开启侧边栏 
+      loadSidebar: true,
+      sidebarDisplayLevel: 1,
+    }
+  
+  </script>
+  <!-- Docsify v4 -->
+  <!-- 修改这里，引入本地JS -->
+  <script src="./js/docsify.min.js"></script>
+  </script>
+</body>
+</html>
+```
+
+如此优化之后，哪怕现在电脑完全断网，使用`docsify serve`命令你的项目也可以完成渲染预览。
+
+### 安装插件
 
 这里先列出一些常用的插件
 
@@ -45,5 +87,90 @@ docsify serve docs
 | [docsify-dark-mode](https://github.com/Plugin-contrib/docsify-plugin/tree/master/packages/docsify-dark-mode) | 暗黑模式 |
 | [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code) | 允许复制代码到剪切板 |
 | [mermaid-docsify](https://github.com/Leward/mermaid-docsify) | mermaid绘图 |
+
+安装插件我也是先将插件JS文件按上面的方法放入Docsify文件夹，然后再引入`index.html`来实现的，下面是我的`index.html`文件，注释很清晰，应该比较容易理解。
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      // 开启侧边栏 
+      loadSidebar: true,
+      sidebarDisplayLevel: 1,
+      // 搜索
+      search: {
+        paths: 'auto',
+        placeholder: '搜索🔍',
+        noData: '什么都没有找到噢!',
+        depth: 6
+      },
+      // 文档目录
+      subMaxLevel:6,
+      // 字数统计
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
+      // 设置文档名称
+      name: 'A SURGEON.',
+      //mermaid绘图
+      mermaidConfig: {
+        querySelector: ".mermaid"
+      },
+      //mermaid bug修复
+      plugins: [
+        function (hook) {
+          hook.doneEach(function () {
+            let mermaidConfig = {
+              querySelector: ".mermaid",
+            };
+            mermaid.run(mermaidConfig);
+          });
+        },
+      ],
+      
+    }
+  
+  </script>
+  <!-- Docsify v4 -->
+  <script src="./js/docsify.min.js"></script>
+  <!-- 搜索 -->
+  <script src="./js/search.min.js"></script>
+  <!-- 代码复制按钮 -->
+  <script src="./js/docsify-copy-code.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="./js/countable.min.js"></script>
+  <!-- 侧边栏折叠 -->
+  <script src="./js/docsify-sidebar-collapse.min.js"></script>
+  <!-- mermaid绘图 -->
+  <script type="module">
+    import mermaid from "./js/mermaid/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+  <script src="./js/docsify-mermaid.js"></script>
+  <!-- PWA -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('./js/sw.js')
+    }
+  </script>
+</body>
+</html>
+```
 
 ## 三、部署
