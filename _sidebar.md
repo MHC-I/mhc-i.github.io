@@ -15,15 +15,15 @@
     * 🐼 Pandas
 * 🎛 计算机相关
     * 🧰 应用手册
+        * [Markdown](/计算机相关/应用手册/Markdown.md)
         * [Docsify](/计算机相关/应用手册/Docsify.md)
         * [Git](/计算机相关/应用手册/Git.md)
         * [Github Action](/计算机相关/应用手册/Github_Action.md)
     * 🚀 代码学习
     * 🐬 Linux
-    * 🍎 Apple
-        * [MacOS](/计算机相关/Apple/MacOS)
+        * [常用命令](/计算机相关/Linux/常用命令.md)
+    * [🍎 MacOS](/计算机相关/MacOS.md)
 * 🏞 生活记录
     *  📽 观影
-    *  📚 阅读
     *  ⛰ 日常
-    *  🛁 碎碎念
+    *  [🛁 碎碎念](/生活记录/碎碎念.md)
