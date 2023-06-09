@@ -14,8 +14,6 @@
 <mark style="background: #BBFABBA6;">绿色</mark>
 ```
 
-
-
 ## 上下标
 ```html
 <sup>上标</sup>
@@ -24,6 +22,10 @@
 <sub>下标</sub>
 ```
 
+## 图片缩放并居中
+```
+<div align="center"> <img src="图片地址" zoom=40% /> </div>
+```
 ## Mermaid
 饼图
 ```

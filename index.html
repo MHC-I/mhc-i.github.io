@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Digital Garden</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -12,8 +12,13 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
+      // 设置文档名称
+      name: 'Digital Garden',
       repo: '',
+      //浏览器缓存时间
+      requestHeaders: {
+      'cache-control': 'max-age=600',
+      },
       // 开启侧边栏 
       loadSidebar: true,
       sidebarDisplayLevel: 1,
@@ -37,8 +42,6 @@
         color:'rgb(90,90,90)',
         language:'chinese'
       },
-      // 设置文档名称
-      name: 'A SURGEON.',
       //mermaid绘图
       mermaidConfig: {
         querySelector: ".mermaid"
@@ -87,5 +90,9 @@
   </script>
   <!-- 备案信息 -->
   <script src="./js/beian.min.js"></script>
+  <!-- 图片缩放 -->
+  <script src="./js/zoom-image.min.js"></script> 
+  <!-- 上下章节 -->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>
