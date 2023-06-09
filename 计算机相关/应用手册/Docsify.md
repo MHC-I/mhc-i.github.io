@@ -218,13 +218,8 @@ jobs:
 ```
 到存放仓库下设置`ACCESS_KEY_ID`和`ACCESS_KEY_SECRET`两个Secret，设置路径为：`Settings`→`Codesecurity and analysis`→`Secrets and variables`→`Actions`
 
-![截屏2023-06-08 23.08.26](/media/%E6%88%AA%E5%B1%8F2023-06-08%2023.08.26.png)
+![截屏2023-06-08 23.08.26](.media/%E6%88%AA%E5%B1%8F2023-06-08%2023.08.26.png)
 
 两个Secret对应的值到如下图位置获取
 
-![截屏2023-06-08 23.16.38](/media/%E6%88%AA%E5%B1%8F2023-06-08%2023.16.38-1.jpeg)
-
-
-
-
-
+![截屏2023-06-08 23.16.38-1](.media/%E6%88%AA%E5%B1%8F2023-06-08%2023.16.38-1.jpeg)

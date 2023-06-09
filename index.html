@@ -17,6 +17,10 @@
       // 开启侧边栏 
       loadSidebar: true,
       sidebarDisplayLevel: 1,
+      // 避免侧边栏不必要的回退
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+      }, 
       // 搜索
       search: {
         paths: 'auto',
@@ -50,6 +54,10 @@
           });
         },
       ],
+      //备案信息
+      beian: {
+        ICP: "滇ICP备2020007367号",
+      },
       
     }
   
@@ -77,5 +85,7 @@
       navigator.serviceWorker.register('./js/sw.js')
     }
   </script>
+  <!-- 备案信息 -->
+  <script src="./js/beian.min.js"></script>
 </body>
 </html>
