@@ -15,10 +15,8 @@
       // 设置文档名称
       name: 'Digital Garden',
       repo: '',
-      //浏览器缓存时间
-      requestHeaders: {
-      'cache-control': 'max-age=600',
-      },
+      //切换文章自动回到顶部
+      auto2top: true,
       // 开启侧边栏 
       loadSidebar: true,
       sidebarDisplayLevel: 1,
@@ -93,6 +91,10 @@
   <!-- 图片缩放 -->
   <script src="./js/zoom-image.min.js"></script> 
   <!-- 上下章节 -->
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="./js/docsify-pagination.min.js"></script>
+  <!-- 代码高亮支持 -->
+  <script src="./js/prism-bash.min.js"></script>
+  <script src="./js/prism-python.min.js"></script>
+  <script src="./js/prism-yaml.min.js"></script>
 </body>
 </html>

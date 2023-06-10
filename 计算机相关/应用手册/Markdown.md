@@ -24,8 +24,10 @@
 
 ## 图片缩放并居中
 ```
-<div align="center"> <img src="图片地址" zoom=40% /> </div>
+<div align="center"> <img src="图片路径" style="zoom : 40%" /> </div>
 ```
+Markdown和html的路径有所区别，为了兼容 Mweb 和 Docsify ，先将图片上传至图床再用`<div>`标签修改图片大小
+
 ## Mermaid
 饼图
 ```

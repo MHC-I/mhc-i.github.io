@@ -12,7 +12,7 @@
 - 计算机相关：关于计算机我所知道的一切
 - 生活记录：做一个热爱生活的Surgeon
 
-## 🍃 流程
+## 🚀 发布流程
 
 ```mermaid
 graph LR
@@ -20,3 +20,5 @@ A["Mweb(文章编辑)"]-->B[Git发布到Github]-->C["生成GitHub Pages"]
 B-->D["GitHub Action同步到阿里云OSS"]-->E[阿里云CDN]
 C & E-->F[浏览器请求]--docsify-->呈现
  ```
+ 
+ 具体搭建过程请查看[Docsify笔记](/计算机相关/应用手册/Docsify.md)
