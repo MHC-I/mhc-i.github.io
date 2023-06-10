@@ -20,9 +20,11 @@
         * [Git](/计算机相关/应用手册/Git.md)
         * [Github Action](/计算机相关/应用手册/Github_Action.md)
     * 🚀 代码学习
+        * [Python](/计算机相关/代码学习/Python.md)
     * 🐬 Linux
         * [常用命令](/计算机相关/Linux/常用命令.md)
-    * [🍎 MacOS](/计算机相关/MacOS.md)
+    * 🍎 MacOS
+        * [常用命令](/计算机相关/MacOS/常用命令.md)
 * 🏞 生活记录
     *  📽 观影
     *  ⛰ 日常
