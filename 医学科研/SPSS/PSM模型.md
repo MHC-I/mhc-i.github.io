@@ -6,7 +6,7 @@
 实验性研究中随机对照实验（RCT）最常用，并且因为能够平衡组间所有混杂因素，使得两组唯一区别就是干预因素，所以被称为临床研究“金标准”（在样本量足够大的情况下，只要是纯随机，组间混杂因素大概率是平衡的）
 
 但是临床研究无法做到纯随机分组，eg：
-①在该项研究[^1]当中，选择手术治疗或SBRT已经是既定的事实，而不是将病人随机分为两组后一组使用手术治疗，另一组使用SBRT疗法。（假设年轻人更倾向于SBRT，而老年人更侵向于手术治疗。而我们已知年龄也是影响疗效的一项因素，这样结果大概率是SBRT的疗效优于手术治疗，这样的实验结果就存在偏倚。我们就需要用PSM平衡掉年龄「混杂因素」的影响）
+①在[该项研究]((https://meetings.asco.org/abstracts-presentations/221417))当中，选择手术治疗或SBRT已经是既定的事实，而不是将病人随机分为两组后一组使用手术治疗，另一组使用SBRT疗法。（假设年轻人更倾向于SBRT，而老年人更侵向于手术治疗。而我们已知年龄也是影响疗效的一项因素，这样结果大概率是SBRT的疗效优于手术治疗，这样的实验结果就存在偏倚。我们就需要用PSM平衡掉年龄「混杂因素」的影响）
 
 ## 二、PSM原理
 通过统计学方法，把所有的混杂因素通过打分并计算总分的方式，给出每一个受试对象的混杂总分，这个混杂总分就是<mark style="background: #BBFABBA6;">倾向性评分(Propensity Score，PS)</mark>，
@@ -29,7 +29,3 @@ PS评分差距在0.02分（也可以适当放宽到0.03分)的两个受试对象
 3. 根据PS匹配两组间的受试对象，实现混杂因素的组间平衡
 
 ### 2. Python
-
-
-
-[^1]: The efficacy of radical hepatectomy versus stereotactic body radiotherapy for primary hepatocellular carcinoma: A propensity score matching analysis.[链接](https://meetings.asco.org/abstracts-presentations/221417)

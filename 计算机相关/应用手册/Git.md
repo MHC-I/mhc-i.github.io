@@ -28,31 +28,31 @@ git remote -v
 
 显示某个远程仓库的信息
 ```bash
-git remote show [remote地址]
+git remote show [远程仓库地址]
 ```
 
 添加远程仓库
 ```bash
-git remote add [shortname] [url]
+git remote add [远程主机名] [远程仓库地址]
 
-# shortname 为本地的版本库，例如提交到 Github这样写
+#例如提交到 Github这样写
 $ git remote add origin https://github.com/MHC-I/mhc-i.github.io.git
 $ git push -u origin main
 ```
 
 删除远程仓库
 ```bash
-git remote rm name
+git remote rm [远程主机名]
 ```
 
-修改仓库名
+修改远程主机名
 ```bash
 git remote rename old_name new_name 
 ```
 
 ### pull
 
-用于从远程获取代码并合并本地的版本
+从远程获取代码并合并本地的版本
 ```bash
 git pull <远程主机名> <远程分支名>:<本地分支名>
 ```
@@ -71,20 +71,28 @@ git pull origin master
 > 如果远程仓库在上一次push后被修改，直接push会报错  `Updates were rejected because the remote contains work that you do not have locally.` 。此时应该先 `pull` 后再 `push` 。
  
 ### push
-用于从将本地的分支版本上传到远程并合并
+
+将本地的分支版本上传到远程并合并
 ```bash
 git push <远程主机名> <本地分支名>:<远程分支名>
 ```
 
 ## 三、取消本地修改
 
+回滚文件到未修改状态
 ```bash
-git checkout . && git clean -nxfd # 组合使用
-
 git checkout . #本地所有修改没有的提交的，都返回到原来的状态
+```
 
+删除新添加的文件
+```bash
 git clean -n #查看clean会删除掉哪些文件
-git clean -f # 删除 untracked files
+git clean -f # 删除 untrack files
 git clean -fd #连 untrack 的目录也一起删掉
 git clean -xfd #连 .gitignore 的 untrack 文件/目录也一起删掉
+```
+
+组合使用
+```bash
+git checkout . && git clean -nxfd
 ```
