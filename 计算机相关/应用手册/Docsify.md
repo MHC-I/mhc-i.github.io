@@ -200,9 +200,9 @@ Docsify 有 requestHeaders 的设置参数，但是设置 `Cache-Control` 为 `m
 
 后来终于在CDN控制台找到了方法，点开网站对应CDN的管理页面，配置如图
 
-![](.assets/16872322288187.png)
+![截屏2023-06-10 12.39.56](http://img.wbc.icu/2023/06/10/jie-ping20230610-123956.png)
 
-<div align="center"> <img src="http://wbc.icu/public/16872322903397.png" style="zoom : 40%" /> </div>
+<div align="center"> <img src="http://img.wbc.icu/2023/06/10/jie-ping20230610-124416.png" style="zoom : 40%" /> </div>
 
 ## 三、部署
 
@@ -227,7 +227,7 @@ C & E-->F[浏览器请求]--docsify-->呈现
 
 如果不使用在线图床，可以像我这样设置附件文件夹（右键引入文件夹），附件文件夹会被隐藏起来，整个目录树看起来会更加整洁
 
-<div align="center"> <img src="http://wbc.icu/public/16872323667050.png" style="zoom : 40%" /> </div>
+<div align="center"> <img src="http://img.wbc.icu/2023/06/09/jie-ping20230609-171339.png" style="zoom : 40%" /> </div>
 
 ### GitHub Action同步到阿里云OSS
 GitHub Action同步到阿里云OSS的yml文件如下
@@ -264,11 +264,11 @@ jobs:
 ```
 到存放仓库下设置`ACCESS_KEY_ID`和`ACCESS_KEY_SECRET`两个Secret，设置路径为：`Settings`→`Codesecurity and analysis`→`Secrets and variables`→`Actions`
 
-![](.assets/16872324414454.png)
+![截屏2023-06-10 12.45.04](http://img.wbc.icu/2023/06/10/jie-ping20230608-230826.png)
 
 两个Secret对应的值到如下图位置获取
 
-![](.assets/16872324522998.jpg)
+![截屏2023-06-10 12.45.04](http://img.wbc.icu/2023/06/10/jieping202306082316381.jpeg)
 
 
 
