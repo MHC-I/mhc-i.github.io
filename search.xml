@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>R绘图中文字符乱码问题</title>
+    <url>/2024/R%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;Cairo&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<p>打开R studio → Tools → Global Options → General → Graphics</p>
+<p>将 Graphics 中 Graphics Device 设置为 Cairo</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/%E6%88%AA%E5%B1%8F2024-11-07%2019.39.10.png"
+                      alt="截屏2024-11-07 19.39.10"
+                ></p>
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;showtext&quot;</span><span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>showtext<span class="punctuation">)</span></span><br><span class="line">showtext_auto<span class="punctuation">(</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>绘图</tag>
+        <tag>乱码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无法开启“家人共享”</title>
+    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
+    <content><![CDATA[<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>找到icloud设置</p>
+<p>找到管理你的icloud</p>
+<p>找到家人共享</p>
+<p>关掉</p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>iCloud</tag>
+        <tag>家人共享</tag>
+      </tags>
+  </entry>
+</search>
