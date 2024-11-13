@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>无法开启“家人共享”</title>
+    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
+    <content><![CDATA[<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>找到icloud设置</p>
+<p>找到管理你的icloud</p>
+<p>找到家人共享</p>
+<p>关掉</p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>iCloud</tag>
+        <tag>家人共享</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>R绘图中文字符乱码问题</title>
     <url>/2024/R%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;Cairo&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
@@ -21,24 +39,6 @@
         <tag>R</tag>
         <tag>绘图</tag>
         <tag>乱码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无法开启“家人共享”</title>
-    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
-    <content><![CDATA[<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>找到icloud设置</p>
-<p>找到管理你的icloud</p>
-<p>找到家人共享</p>
-<p>关掉</p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>iCloud</tag>
-        <tag>家人共享</tag>
       </tags>
   </entry>
 </search>
