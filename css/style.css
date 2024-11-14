@@ -6066,6 +6066,7 @@ html.is-animating .transition-navbar {
 @media (max-width: 640px) {
   .home-content-container {
     margin-right: 0;
+    padding-top: 20px;
   }
 }
 .home-content-container .seo-reader-text {
