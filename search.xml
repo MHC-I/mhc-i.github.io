@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux 删除子目录下特定后缀文件</title>
-    <url>/2024/Linux%20%E5%88%A0%E9%99%A4%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%89%B9%E5%AE%9A%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">find /path/to/parent_directory -<span class="built_in">type</span> f -name <span class="string">&quot;*.lrc&quot;</span> -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br><span class="line">- <span class="built_in">type</span> f <span class="comment"># 指定文件类型为普通文件， f（普通文件）、d（目录）、l（符号链接）</span></span><br><span class="line">- name <span class="comment"># 按文件名查找，支持使用通配符 * 和 ?</span></span><br><span class="line">-<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \; <span class="comment">#-exec 选项允许你执行一个命令，&#123;&#125; 将会被匹配到的文件名替代，\; 表示命令结束</span></span><br></pre></td></tr></table></figure></div>
-
-<p>🔗：<a class="link"   href="https://www.runoob.com/linux/linux-comm-find.html" >find命令详细说明 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GPT 中译英指令</title>
     <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
     <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
@@ -29,6 +15,20 @@
       <tags>
         <tag>GPT</tag>
         <tag>翻译</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 删除子目录下特定后缀文件</title>
+    <url>/2024/Linux%20%E5%88%A0%E9%99%A4%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%89%B9%E5%AE%9A%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">find /path/to/parent_directory -<span class="built_in">type</span> f -name <span class="string">&quot;*.lrc&quot;</span> -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br><span class="line">- <span class="built_in">type</span> f <span class="comment"># 指定文件类型为普通文件， f（普通文件）、d（目录）、l（符号链接）</span></span><br><span class="line">- name <span class="comment"># 按文件名查找，支持使用通配符 * 和 ?</span></span><br><span class="line">-<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \; <span class="comment">#-exec 选项允许你执行一个命令，&#123;&#125; 将会被匹配到的文件名替代，\; 表示命令结束</span></span><br></pre></td></tr></table></figure></div>
+
+<p>🔗：<a class="link"   href="https://www.runoob.com/linux/linux-comm-find.html" >find命令详细说明 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -167,20 +167,6 @@
       </tags>
   </entry>
   <entry>
-    <title>UNRAID 为 Docker 设置全局代理</title>
-    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
-    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">HTTP_PROXY=http://127.0.0.1:20171</span><br><span class="line">HTTPS_PROXY=http://127.0.0.1:20171</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>UNRAID</tag>
-        <tag>Docker</tag>
-        <tag>代理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>R语言常用代码</title>
     <url>/2024/R%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/</url>
     <content><![CDATA[<h2 id="基本处理"><a href="#基本处理" class="headerlink" title="基本处理"></a>基本处理</h2><h3 id="数据清理"><a href="#数据清理" class="headerlink" title="数据清理"></a>数据清理</h3><h4 id="删除包含空值的个案"><a href="#删除包含空值的个案" class="headerlink" title="删除包含空值的个案"></a>删除包含空值的个案</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_cache <span class="operator">&lt;-</span> database_group<span class="punctuation">[</span>complete.cases<span class="punctuation">(</span>database_group<span class="operator">$</span>group<span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
@@ -227,6 +213,20 @@
       </tags>
   </entry>
   <entry>
+    <title>UNRAID 为 Docker 设置全局代理</title>
+    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">HTTP_PROXY=http://127.0.0.1:20171</span><br><span class="line">HTTPS_PROXY=http://127.0.0.1:20171</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>UNRAID</tag>
+        <tag>Docker</tag>
+        <tag>代理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>倾向性评分匹配 (Propensity Score Matching, PSM)</title>
     <url>/2024/%E5%80%BE%E5%90%91%E6%80%A7%E8%AF%84%E5%88%86%E5%8C%B9%E9%85%8D%EF%BC%88Propensity%20Score%20Matching,%20PSM%EF%BC%89/</url>
     <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>研究类型：①实验性研究；②观察性研究</p>
@@ -254,6 +254,23 @@
       </tags>
   </entry>
   <entry>
+    <title>青龙面板使用浏览器抓取京东 Cookie</title>
+    <url>/2024/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E4%BA%AC%E4%B8%9CCookie/</url>
+    <content><![CDATA[<p>Chrome  隐私模式 打开<a class="link"   href="https://m.jd.com/]()" >京东 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>按F12键打开开发者工具,点击Network</p>
+<p>登陆</p>
+<p>复制cookie，我们只需要 <code>pt_pin=xxxx;pt_key=xxxx;</code>这一段，两个分号必不可少</p>
+<p>存储于 <code>JD_COOKIE</code>变量中，多个账号以相同名称再建变量即可</p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>青龙面板</tag>
+        <tag>京东</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>iOS 无法开启“家人共享”</title>
     <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
     <content><![CDATA[<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
@@ -269,23 +286,6 @@
         <tag>iOS</tag>
         <tag>iCloud</tag>
         <tag>家人共享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>青龙面板使用浏览器抓取京东 Cookie</title>
-    <url>/2024/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E4%BA%AC%E4%B8%9CCookie/</url>
-    <content><![CDATA[<p>Chrome  隐私模式 打开<a class="link"   href="https://m.jd.com/]()" >京东 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>按F12键打开开发者工具,点击Network</p>
-<p>登陆</p>
-<p>复制cookie，我们只需要 <code>pt_pin=xxxx;pt_key=xxxx;</code>这一段，两个分号必不可少</p>
-<p>存储于 <code>JD_COOKIE</code>变量中，多个账号以相同名称再建变量即可</p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>青龙面板</tag>
-        <tag>京东</tag>
       </tags>
   </entry>
 </search>
