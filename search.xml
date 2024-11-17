@@ -18,20 +18,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 删除子目录下特定后缀文件</title>
-    <url>/2024/Linux%20%E5%88%A0%E9%99%A4%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%89%B9%E5%AE%9A%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">find /path/to/parent_directory -<span class="built_in">type</span> f -name <span class="string">&quot;*.lrc&quot;</span> -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br><span class="line">- <span class="built_in">type</span> f <span class="comment"># 指定文件类型为普通文件， f（普通文件）、d（目录）、l（符号链接）</span></span><br><span class="line">- name <span class="comment"># 按文件名查找，支持使用通配符 * 和 ?</span></span><br><span class="line">-<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \; <span class="comment">#-exec 选项允许你执行一个命令，&#123;&#125; 将会被匹配到的文件名替代，\; 表示命令结束</span></span><br></pre></td></tr></table></figure></div>
-
-<p>🔗：<a class="link"   href="https://www.runoob.com/linux/linux-comm-find.html" >find命令详细说明 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo发布之后GitHub Pages自定义域名失效</title>
     <url>/2024/Hexo%E5%8F%91%E5%B8%83%E4%B9%8B%E5%90%8EGitHub%20Pages%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%A4%B1%E6%95%88/</url>
     <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>每次<code>hexo deploy</code>之后，访问自己的GitHub Pages自定义域名会404，重新查看仓库的设置发现Custom domain项变成空白</p>
@@ -77,6 +63,96 @@
       <tags>
         <tag>Mac</tag>
         <tag>LaunchPad</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 删除子目录下特定后缀文件</title>
+    <url>/2024/Linux%20%E5%88%A0%E9%99%A4%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%89%B9%E5%AE%9A%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">find /path/to/parent_directory -<span class="built_in">type</span> f -name <span class="string">&quot;*.lrc&quot;</span> -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br><span class="line">- <span class="built_in">type</span> f <span class="comment"># 指定文件类型为普通文件， f（普通文件）、d（目录）、l（符号链接）</span></span><br><span class="line">- name <span class="comment"># 按文件名查找，支持使用通配符 * 和 ?</span></span><br><span class="line">-<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \; <span class="comment">#-exec 选项允许你执行一个命令，&#123;&#125; 将会被匹配到的文件名替代，\; 表示命令结束</span></span><br></pre></td></tr></table></figure></div>
+
+<p>🔗：<a class="link"   href="https://www.runoob.com/linux/linux-comm-find.html" >find命令详细说明 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Navidrome 不同艺术家导致同一专辑被拆分</title>
+    <url>/2024/Navidrome%E4%B8%8D%E5%90%8C%E8%89%BA%E6%9C%AF%E5%AE%B6%E5%AF%BC%E8%87%B4%E5%90%8C%E4%B8%80%E4%B8%93%E8%BE%91%E8%A2%AB%E6%8B%86%E5%88%86/</url>
+    <content><![CDATA[<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>查看几个存在相同问题的专辑发现其共同的问题是专辑内歌曲的<code>艺术家</code>不同，且<code>专辑艺术家</code>为空（当然这已经是修改之后的了）。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-03-09%2020.19.01-bheh.webp"
+                      alt="截屏2024-03-09 20.19.01-bheh"
+                ></p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>解决思路就是使用<a class="link"   href="https://github.com/xhongc/music-tag-web" >Music-tag-web <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>或其他软件修改歌曲信息，修改<code>专辑艺术家</code>为同一艺术家（修改该项并不会影响软件中的艺术家显示）。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-03-09%2020.24.37.webp"
+                      alt="截屏2024-03-09 20.24.37"
+                ></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Navidrome</tag>
+        <tag>专辑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Restic 文件备份</title>
+    <url>/2024/Restic%20%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仓库密码</span></span><br><span class="line"><span class="built_in">export</span> RESTIC_PASSWORD=</span><br><span class="line"><span class="comment"># appdata</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/cache/appdata</span><br><span class="line"><span class="comment"># music</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/disk1/PTdown/bz/music</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Restic</tag>
+        <tag>备份</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Navidrome 配置中文说明</title>
+    <url>/2024/Navidrome%E9%85%8D%E7%BD%AE%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment"># This is just an example! Please see available options to customize Navidrome for your needs at</span></span><br><span class="line"><span class="comment"># https://www.navidrome.org/docs/usage/configuration-options/#available-options</span></span><br><span class="line"><span class="comment">#启动命令 ./navidrome --configfile ./navidrome.toml </span></span><br><span class="line"><span class="attr">MusicFolder</span> = <span class="string">&quot;/mnt/sda2/Public/Music&quot;</span>  <span class="comment">#存储音乐库的文件夹。可以是只读的</span></span><br><span class="line"><span class="attr">DataFolder</span> =  <span class="string">&quot;/mnt/sda2/Configs/Navidrome&quot;</span>  <span class="comment">#用于存储应用程序数据 （DB） 的文件夹</span></span><br><span class="line"><span class="attr">CacheFolder</span> = <span class="string">&quot;/mnt/sda2/Configs/Navidrome/cache&quot;</span>  <span class="comment">#用于存储缓存数据（转码、图像等）的文件夹</span></span><br><span class="line"><span class="attr">LogLevel</span> = <span class="string">&quot;info&quot;</span>  <span class="comment">#日志级别。用于故障排除。可能的值：error、warn、info、debug、trace</span></span><br><span class="line"><span class="attr">Address</span> = <span class="string">&quot;0.0.0.0&quot;</span> <span class="comment">#服务器将绑定到的地址。 可以是 IPv4 或 IPv6。还支持 Unix 套接字文件的 unix：/path/to/file</span></span><br><span class="line"><span class="attr">BaseUrl</span> = <span class="string">&quot;&quot;</span>  <span class="comment">#用于在代理后面配置 Navidrome 的基本 URL（例如：/music、https://music.example.com）</span></span><br><span class="line"><span class="attr">Port</span> = <span class="number">4533</span>  <span class="comment">#Navidrome 将使用的 HTTP 端口</span></span><br><span class="line"><span class="attr">DefaultLanguage</span> = <span class="string">&quot;zh-Hans&quot;</span>  <span class="comment">#设置从新浏览器登录时 UI 使用的默认语言。此值必须与 resources/i18n 中的某个文件名匹配。例如：对于简体中文，它必须是 zh-Hans（区分大小写）</span></span><br><span class="line"><span class="comment">#转码相关</span></span><br><span class="line"><span class="attr">TranscodingCacheSize</span> = <span class="string">&quot;1000MB&quot;</span>  <span class="comment">#转码缓存的大小。设置为“0”以禁用缓存</span></span><br><span class="line"><span class="attr">SessionTimeout</span> = <span class="string">&quot;24h&quot;</span>  <span class="comment">#Navidrome 在关闭 Web UI 空闲会话之前将等待多长时间</span></span><br><span class="line"><span class="attr">ImageCacheSize</span> = <span class="string">&quot;1000MB&quot;</span>  <span class="comment">#图像（艺术作品）缓存的大小。设置为“0”以禁用缓存</span></span><br><span class="line"><span class="attr">EnableTranscodingConfig</span> = <span class="string">&quot;TRUE&quot;</span>  <span class="comment">#在 UI 中启用转码配置A</span></span><br><span class="line"><span class="comment">#高级选项</span></span><br><span class="line"><span class="attr">EnableSharing</span> = <span class="string">&#x27;TRUE&#x27;</span>  <span class="comment">#启用共享功能</span></span><br><span class="line"><span class="comment">#TLSCert = &quot;&quot;  #TLS 证书文件的路径，其中应包含签名链（如果有）</span></span><br><span class="line"><span class="comment">#TLSKey = &quot;&quot;  #TLS 密钥文件的路径</span></span><br><span class="line"><span class="comment">#UILoginBackgroundUrl = &#x27;random music image from Unsplash.com&#x27;  #更改登录页面中使用的背景图像</span></span><br><span class="line"><span class="attr">UIWelcomeMessage</span> = <span class="string">&quot;外奥康姆&quot;</span>  <span class="comment">#在登录屏幕添加欢迎消息</span></span><br><span class="line"><span class="comment">#AuthRequestLimit  = 5  #在 AuthWindowLength 期间，可以从单个 IP 处理多少个登录请求。设置为 0 可禁用限制</span></span><br><span class="line"><span class="attr">AuthWindowLength</span> = <span class="string">&quot;20s&quot;</span>  <span class="comment">#身份验证速率限制的窗口长度</span></span><br><span class="line"><span class="comment">#AutoImportPlaylists = &#x27;TRUE&#x27;  #启用/禁用 .m3u 播放列表自动导入</span></span><br><span class="line"><span class="attr">CoverArtPriority</span> = <span class="string">&#x27;cover.*, folder.*, front.*, embedded, external&#x27;</span>  <span class="comment">#配置顺序以查找封面艺术图像。使用特殊的嵌入值从音频文件中获取嵌入的图像</span></span><br><span class="line"><span class="attr">ArtistArtPriority</span> = <span class="string">&#x27;artist.*, album/artist.*, external&#x27;</span>  <span class="comment">#配置顺序以查找艺术家图像。</span></span><br><span class="line"><span class="comment">#CoverJpegQuality = 75  #设置调整大小的封面艺术图像的 JPEG 质量百分比</span></span><br><span class="line"><span class="comment">#DefaultDownsamplingFormat = &#x27;opus&#x27;  #客户端请求缩减采样时要转码的格式（指定不带格式的 maxBitrate）</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">#DefaultTheme = &#x27;Dark&#x27;  #设置 UI 从新浏览器登录时使用的默认主题。此值必须与 UI 中的某个选项匹配</span></span><br><span class="line"><span class="comment">#EnableArtworkPrecache = &#x27;TRUE&#x27;  #启用新添加音乐的图像预缓存</span></span><br><span class="line"><span class="comment">#EnableCoverAnimation = &#x27;TRUE&#x27;  #控制 UI 中的播放器是否对专辑封面进行动画处理（旋转）</span></span><br><span class="line"><span class="comment">#EnableDownloads = &#x27;TRUE&#x27;  #在UI中启用该选项以从服务器下载音乐/专辑/艺术家/播放列表</span></span><br><span class="line"><span class="comment">#EnableExternalServices = &#x27;TRUE&#x27;  #将此设置为 &#x27;FALSE&#x27; 可完全禁用所有外部集成</span></span><br><span class="line"><span class="attr">EnableFavourites</span> = <span class="string">&#x27;TRUE&#x27;</span>  <span class="comment">#在UI中为歌曲/专辑/艺术家启用切换“Heart”/“Loved”（映射到Subsonic Clients中的“Star”/“Starred”）</span></span><br><span class="line"><span class="comment">#EnableGravatar = &#x27;FALSE&#x27;  #使用 Gravatar 图像作为用户配置文件图像。需要填写用户的电子邮件</span></span><br><span class="line"><span class="comment">#EnableLogRedacting = &#x27;TRUE&#x27;  #是否应在日志中编辑（隐藏）敏感信息（如令牌和密码）</span></span><br><span class="line"><span class="comment">#EnableMediaFileCoverArt = &#x27;TRUE&#x27;  #如果设置为 &#x27;FALSE&#x27;，则在请求歌曲 CoverArt 时将返回专辑 CoverArt</span></span><br><span class="line"><span class="comment">#EnableReplayGain = &#x27;TRUE&#x27;  #在UI中启用ReplayGain选项</span></span><br><span class="line">    </span><br><span class="line"><span class="attr">EnableStarRating</span> = <span class="string">&#x27;TRUE&#x27;</span>  <span class="comment">#在 UI 中启用 5 星评级</span></span><br><span class="line"><span class="attr">EnableUserEditing</span> = <span class="string">&#x27;TRUE&#x27;</span>  <span class="comment">#使普通用户能够编辑其详细信息并更改其密码</span></span><br><span class="line"><span class="comment">#FFmpegPath = &quot;&quot;  #ffmpeg 可执行文件的路径。当 Navidrome 找不到它，或者您想使用特定版本时使用它</span></span><br><span class="line"><span class="comment">#GATrackingID = &quot;&quot; # (disabled) 将基本信息发送到您自己的 Google Analytics（分析）帐户。 必须采用 UA-XXXXXXXX 格式</span></span><br><span class="line"><span class="comment">#IgnoredArticles = &quot;The El La Los Las Le Les Os As O A&quot;  #对艺术家进行排序/索引时忽略的文章列表</span></span><br><span class="line"><span class="comment">#Jukebox.Enabled = &#x27;FALSE&#x27;  #启用自动存储塔模式（在服务器硬件上播放音频） 详情请点击这里</span></span><br><span class="line"><span class="comment">#Jukebox.Devices = &quot;&quot;  #(auto detect) 自动存储塔可以使用的设备列表。详情请点击这里</span></span><br><span class="line"><span class="comment">#Jukebox.Default = &quot;&quot;  #(auto detect)用于自动存储塔模式的设备（如果有多个 Jukebox.Devices 条目）。详情请点击这里</span></span><br><span class="line"><span class="comment">#LastFM.ApiKey = &#x27;Navidrome project’s shared ApiKey&#x27;  #Last.fm ApiKey</span></span><br><span class="line"><span class="comment">#LastFM.Enabled = &#x27;TRUE&#x27;  #将此设置为 &#x27;FALSE&#x27; 以完全禁用 Last.fm 集成</span></span><br><span class="line"><span class="comment">#LastFM.Language = &quot;en&quot;  #用于从 Last.fm 检索传记的语言的两个字母代码</span></span><br><span class="line"><span class="comment">#LastFM.Secret = &#x27;Navidrome project’s shared Secret&#x27;  #Last.fm 共享密钥</span></span><br><span class="line"><span class="comment">#ListenBrainz.BaseURL = &#x27;https://api.listenbrainz.org/1/  #设置此选项可覆盖默认的 ListenBrainz 基 URL（适用于 Maloja* 等自托管解决方案）</span></span><br><span class="line"><span class="comment">#ListenBrainz.Enabled = &#x27;TRUE&#x27;  #将此设置为 &#x27;FALSE&#x27; 可完全禁用 ListenBrainz 集成</span></span><br><span class="line"><span class="comment">#MaxSidebarPlaylists = &#x27;100&#x27;  #设置 UI 边栏中显示的最大播放列表数量。请注意，非常大的数字可能会导致 UI 性能问题。</span></span><br><span class="line"><span class="comment">#MPVPath = &quot;&quot; # (search in PATH) mpv 可执行文件的路径。用于自动存储塔模式</span></span><br><span class="line"><span class="comment">#PasswordEncryptionKey = &#x27;-  #用于加密数据库中的密码的密码。详情请点击这里</span></span><br><span class="line"><span class="comment">#PlaylistsPath = &quot;.:**/**&quot; #从何处搜索和导入播放列表。可以是文件夹/glob 的列表（在 Windows 上用 ：（或 ;）分隔）。路径必须相对于 MusicFolder</span></span><br><span class="line"><span class="comment">#Prometheus.Enabled = &#x27;FALSE&#x27;  #使用 Prometheus 指标启用额外终端节点。</span></span><br><span class="line"><span class="comment">#Prometheus.MetricsPath = &quot;/metrics&quot;  #Prometheus 指标的自定义路径。可用于阻止未经授权的指标请求。</span></span><br><span class="line"><span class="comment">#RecentlyAddedByModTime = &#x27;FALSE&#x27;  #使用按“最近添加”排序时音乐文件的修改时间。否则，使用导入时间</span></span><br><span class="line"><span class="comment">#ReverseProxyUserHeader = &quot;Remote-User&quot;  #包含来自经过身份验证的代理的用户名的 HTTP 标头</span></span><br><span class="line"><span class="comment">#ReverseProxyWhitelist = &quot;&quot;  #允许使用反向代理身份验证的 IP CIDR 的逗号分隔列表，空表示“全部拒绝”</span></span><br><span class="line"><span class="comment">#Scanner.Extractor = &quot;taglib&quot;  #选择元数据提取器实现。选项：taglib 或 ffmpeg</span></span><br><span class="line"><span class="comment">#Scanner.GenreSeparators = &quot;;/,&quot;  #用于拆分流派标签的分隔符列表</span></span><br><span class="line"><span class="comment">#Scanner.GroupAlbumReleases = &#x27;FALSE&#x27;  #“&#x27;TRUE&#x27;”将具有相同艺术家 + 专辑标题的专辑分组为一张专辑;“&#x27;FALSE&#x27;”将重新发行（=不同的发行日期）拆分为单独的专辑</span></span><br><span class="line"><span class="comment">#ScanSchedule = &quot;@every 1m&quot;  #使用“cron”语法配置定期扫描。要完全禁用它，请将其设置为“0”</span></span><br><span class="line"><span class="comment">#SearchFullString = &#x27;FALSE&#x27;  #匹配可搜索字段中任意位置的查询字符串，而不仅仅是单词边界。适用于单词不以空格分隔的语言</span></span><br><span class="line"><span class="comment">#Spotify.ID = &quot;&quot;  #Spotify 客户端 ID。 如果您想要艺术家图像，则为必填项</span></span><br><span class="line"><span class="comment">#Spotify.Secret = &quot;&quot;  #Spotify 客户端密钥。如果需要艺术家图像，则为必填项</span></span><br><span class="line"><span class="comment">#SubsonicArtistParticipations = &#x27;FALSE&#x27;  #请求艺人专辑时，请包括艺人参与的专辑（例如：各种艺人合辑）</span></span><br></pre></td></tr></table></figure></div>
+
+<p><a class="link"   href="https://www.navidrome.org/docs/usage/configuration-options/#available-options" >Docker变量配置说明 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Navidrome</tag>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RStudio 绘图中文字符乱码问题</title>
+    <url>/2024/R%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;Cairo&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<p>打开R studio → Tools → Global Options → General → Graphics</p>
+<p>将 Graphics 中 Graphics Device 设置为 Cairo</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-07%2019.39.10.webp"
+                      alt="截屏2024-11-07 19.39.10"
+                ></p>
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;showtext&quot;</span><span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>showtext<span class="punctuation">)</span></span><br><span class="line">showtext_auto<span class="punctuation">(</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>绘图</tag>
+        <tag>Cairo</tag>
       </tags>
   </entry>
   <entry>
@@ -161,56 +237,17 @@
       </tags>
   </entry>
   <entry>
-    <title>Navidrome 配置中文说明</title>
-    <url>/2024/Navidrome%E9%85%8D%E7%BD%AE%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment"># This is just an example! Please see available options to customize Navidrome for your needs at</span></span><br><span class="line"><span class="comment"># https://www.navidrome.org/docs/usage/configuration-options/#available-options</span></span><br><span class="line"><span class="comment">#启动命令 ./navidrome --configfile ./navidrome.toml </span></span><br><span class="line"><span class="attr">MusicFolder</span> = <span class="string">&quot;/mnt/sda2/Public/Music&quot;</span>  <span class="comment">#存储音乐库的文件夹。可以是只读的</span></span><br><span class="line"><span class="attr">DataFolder</span> =  <span class="string">&quot;/mnt/sda2/Configs/Navidrome&quot;</span>  <span class="comment">#用于存储应用程序数据 （DB） 的文件夹</span></span><br><span class="line"><span class="attr">CacheFolder</span> = <span class="string">&quot;/mnt/sda2/Configs/Navidrome/cache&quot;</span>  <span class="comment">#用于存储缓存数据（转码、图像等）的文件夹</span></span><br><span class="line"><span class="attr">LogLevel</span> = <span class="string">&quot;info&quot;</span>  <span class="comment">#日志级别。用于故障排除。可能的值：error、warn、info、debug、trace</span></span><br><span class="line"><span class="attr">Address</span> = <span class="string">&quot;0.0.0.0&quot;</span> <span class="comment">#服务器将绑定到的地址。 可以是 IPv4 或 IPv6。还支持 Unix 套接字文件的 unix：/path/to/file</span></span><br><span class="line"><span class="attr">BaseUrl</span> = <span class="string">&quot;&quot;</span>  <span class="comment">#用于在代理后面配置 Navidrome 的基本 URL（例如：/music、https://music.example.com）</span></span><br><span class="line"><span class="attr">Port</span> = <span class="number">4533</span>  <span class="comment">#Navidrome 将使用的 HTTP 端口</span></span><br><span class="line"><span class="attr">DefaultLanguage</span> = <span class="string">&quot;zh-Hans&quot;</span>  <span class="comment">#设置从新浏览器登录时 UI 使用的默认语言。此值必须与 resources/i18n 中的某个文件名匹配。例如：对于简体中文，它必须是 zh-Hans（区分大小写）</span></span><br><span class="line"><span class="comment">#转码相关</span></span><br><span class="line"><span class="attr">TranscodingCacheSize</span> = <span class="string">&quot;1000MB&quot;</span>  <span class="comment">#转码缓存的大小。设置为“0”以禁用缓存</span></span><br><span class="line"><span class="attr">SessionTimeout</span> = <span class="string">&quot;24h&quot;</span>  <span class="comment">#Navidrome 在关闭 Web UI 空闲会话之前将等待多长时间</span></span><br><span class="line"><span class="attr">ImageCacheSize</span> = <span class="string">&quot;1000MB&quot;</span>  <span class="comment">#图像（艺术作品）缓存的大小。设置为“0”以禁用缓存</span></span><br><span class="line"><span class="attr">EnableTranscodingConfig</span> = <span class="string">&quot;TRUE&quot;</span>  <span class="comment">#在 UI 中启用转码配置A</span></span><br><span class="line"><span class="comment">#高级选项</span></span><br><span class="line"><span class="attr">EnableSharing</span> = <span class="string">&#x27;TRUE&#x27;</span>  <span class="comment">#启用共享功能</span></span><br><span class="line"><span class="comment">#TLSCert = &quot;&quot;  #TLS 证书文件的路径，其中应包含签名链（如果有）</span></span><br><span class="line"><span class="comment">#TLSKey = &quot;&quot;  #TLS 密钥文件的路径</span></span><br><span class="line"><span class="comment">#UILoginBackgroundUrl = &#x27;random music image from Unsplash.com&#x27;  #更改登录页面中使用的背景图像</span></span><br><span class="line"><span class="attr">UIWelcomeMessage</span> = <span class="string">&quot;外奥康姆&quot;</span>  <span class="comment">#在登录屏幕添加欢迎消息</span></span><br><span class="line"><span class="comment">#AuthRequestLimit  = 5  #在 AuthWindowLength 期间，可以从单个 IP 处理多少个登录请求。设置为 0 可禁用限制</span></span><br><span class="line"><span class="attr">AuthWindowLength</span> = <span class="string">&quot;20s&quot;</span>  <span class="comment">#身份验证速率限制的窗口长度</span></span><br><span class="line"><span class="comment">#AutoImportPlaylists = &#x27;TRUE&#x27;  #启用/禁用 .m3u 播放列表自动导入</span></span><br><span class="line"><span class="attr">CoverArtPriority</span> = <span class="string">&#x27;cover.*, folder.*, front.*, embedded, external&#x27;</span>  <span class="comment">#配置顺序以查找封面艺术图像。使用特殊的嵌入值从音频文件中获取嵌入的图像</span></span><br><span class="line"><span class="attr">ArtistArtPriority</span> = <span class="string">&#x27;artist.*, album/artist.*, external&#x27;</span>  <span class="comment">#配置顺序以查找艺术家图像。</span></span><br><span class="line"><span class="comment">#CoverJpegQuality = 75  #设置调整大小的封面艺术图像的 JPEG 质量百分比</span></span><br><span class="line"><span class="comment">#DefaultDownsamplingFormat = &#x27;opus&#x27;  #客户端请求缩减采样时要转码的格式（指定不带格式的 maxBitrate）</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">#DefaultTheme = &#x27;Dark&#x27;  #设置 UI 从新浏览器登录时使用的默认主题。此值必须与 UI 中的某个选项匹配</span></span><br><span class="line"><span class="comment">#EnableArtworkPrecache = &#x27;TRUE&#x27;  #启用新添加音乐的图像预缓存</span></span><br><span class="line"><span class="comment">#EnableCoverAnimation = &#x27;TRUE&#x27;  #控制 UI 中的播放器是否对专辑封面进行动画处理（旋转）</span></span><br><span class="line"><span class="comment">#EnableDownloads = &#x27;TRUE&#x27;  #在UI中启用该选项以从服务器下载音乐/专辑/艺术家/播放列表</span></span><br><span class="line"><span class="comment">#EnableExternalServices = &#x27;TRUE&#x27;  #将此设置为 &#x27;FALSE&#x27; 可完全禁用所有外部集成</span></span><br><span class="line"><span class="attr">EnableFavourites</span> = <span class="string">&#x27;TRUE&#x27;</span>  <span class="comment">#在UI中为歌曲/专辑/艺术家启用切换“Heart”/“Loved”（映射到Subsonic Clients中的“Star”/“Starred”）</span></span><br><span class="line"><span class="comment">#EnableGravatar = &#x27;FALSE&#x27;  #使用 Gravatar 图像作为用户配置文件图像。需要填写用户的电子邮件</span></span><br><span class="line"><span class="comment">#EnableLogRedacting = &#x27;TRUE&#x27;  #是否应在日志中编辑（隐藏）敏感信息（如令牌和密码）</span></span><br><span class="line"><span class="comment">#EnableMediaFileCoverArt = &#x27;TRUE&#x27;  #如果设置为 &#x27;FALSE&#x27;，则在请求歌曲 CoverArt 时将返回专辑 CoverArt</span></span><br><span class="line"><span class="comment">#EnableReplayGain = &#x27;TRUE&#x27;  #在UI中启用ReplayGain选项</span></span><br><span class="line">    </span><br><span class="line"><span class="attr">EnableStarRating</span> = <span class="string">&#x27;TRUE&#x27;</span>  <span class="comment">#在 UI 中启用 5 星评级</span></span><br><span class="line"><span class="attr">EnableUserEditing</span> = <span class="string">&#x27;TRUE&#x27;</span>  <span class="comment">#使普通用户能够编辑其详细信息并更改其密码</span></span><br><span class="line"><span class="comment">#FFmpegPath = &quot;&quot;  #ffmpeg 可执行文件的路径。当 Navidrome 找不到它，或者您想使用特定版本时使用它</span></span><br><span class="line"><span class="comment">#GATrackingID = &quot;&quot; # (disabled) 将基本信息发送到您自己的 Google Analytics（分析）帐户。 必须采用 UA-XXXXXXXX 格式</span></span><br><span class="line"><span class="comment">#IgnoredArticles = &quot;The El La Los Las Le Les Os As O A&quot;  #对艺术家进行排序/索引时忽略的文章列表</span></span><br><span class="line"><span class="comment">#Jukebox.Enabled = &#x27;FALSE&#x27;  #启用自动存储塔模式（在服务器硬件上播放音频） 详情请点击这里</span></span><br><span class="line"><span class="comment">#Jukebox.Devices = &quot;&quot;  #(auto detect) 自动存储塔可以使用的设备列表。详情请点击这里</span></span><br><span class="line"><span class="comment">#Jukebox.Default = &quot;&quot;  #(auto detect)用于自动存储塔模式的设备（如果有多个 Jukebox.Devices 条目）。详情请点击这里</span></span><br><span class="line"><span class="comment">#LastFM.ApiKey = &#x27;Navidrome project’s shared ApiKey&#x27;  #Last.fm ApiKey</span></span><br><span class="line"><span class="comment">#LastFM.Enabled = &#x27;TRUE&#x27;  #将此设置为 &#x27;FALSE&#x27; 以完全禁用 Last.fm 集成</span></span><br><span class="line"><span class="comment">#LastFM.Language = &quot;en&quot;  #用于从 Last.fm 检索传记的语言的两个字母代码</span></span><br><span class="line"><span class="comment">#LastFM.Secret = &#x27;Navidrome project’s shared Secret&#x27;  #Last.fm 共享密钥</span></span><br><span class="line"><span class="comment">#ListenBrainz.BaseURL = &#x27;https://api.listenbrainz.org/1/  #设置此选项可覆盖默认的 ListenBrainz 基 URL（适用于 Maloja* 等自托管解决方案）</span></span><br><span class="line"><span class="comment">#ListenBrainz.Enabled = &#x27;TRUE&#x27;  #将此设置为 &#x27;FALSE&#x27; 可完全禁用 ListenBrainz 集成</span></span><br><span class="line"><span class="comment">#MaxSidebarPlaylists = &#x27;100&#x27;  #设置 UI 边栏中显示的最大播放列表数量。请注意，非常大的数字可能会导致 UI 性能问题。</span></span><br><span class="line"><span class="comment">#MPVPath = &quot;&quot; # (search in PATH) mpv 可执行文件的路径。用于自动存储塔模式</span></span><br><span class="line"><span class="comment">#PasswordEncryptionKey = &#x27;-  #用于加密数据库中的密码的密码。详情请点击这里</span></span><br><span class="line"><span class="comment">#PlaylistsPath = &quot;.:**/**&quot; #从何处搜索和导入播放列表。可以是文件夹/glob 的列表（在 Windows 上用 ：（或 ;）分隔）。路径必须相对于 MusicFolder</span></span><br><span class="line"><span class="comment">#Prometheus.Enabled = &#x27;FALSE&#x27;  #使用 Prometheus 指标启用额外终端节点。</span></span><br><span class="line"><span class="comment">#Prometheus.MetricsPath = &quot;/metrics&quot;  #Prometheus 指标的自定义路径。可用于阻止未经授权的指标请求。</span></span><br><span class="line"><span class="comment">#RecentlyAddedByModTime = &#x27;FALSE&#x27;  #使用按“最近添加”排序时音乐文件的修改时间。否则，使用导入时间</span></span><br><span class="line"><span class="comment">#ReverseProxyUserHeader = &quot;Remote-User&quot;  #包含来自经过身份验证的代理的用户名的 HTTP 标头</span></span><br><span class="line"><span class="comment">#ReverseProxyWhitelist = &quot;&quot;  #允许使用反向代理身份验证的 IP CIDR 的逗号分隔列表，空表示“全部拒绝”</span></span><br><span class="line"><span class="comment">#Scanner.Extractor = &quot;taglib&quot;  #选择元数据提取器实现。选项：taglib 或 ffmpeg</span></span><br><span class="line"><span class="comment">#Scanner.GenreSeparators = &quot;;/,&quot;  #用于拆分流派标签的分隔符列表</span></span><br><span class="line"><span class="comment">#Scanner.GroupAlbumReleases = &#x27;FALSE&#x27;  #“&#x27;TRUE&#x27;”将具有相同艺术家 + 专辑标题的专辑分组为一张专辑;“&#x27;FALSE&#x27;”将重新发行（=不同的发行日期）拆分为单独的专辑</span></span><br><span class="line"><span class="comment">#ScanSchedule = &quot;@every 1m&quot;  #使用“cron”语法配置定期扫描。要完全禁用它，请将其设置为“0”</span></span><br><span class="line"><span class="comment">#SearchFullString = &#x27;FALSE&#x27;  #匹配可搜索字段中任意位置的查询字符串，而不仅仅是单词边界。适用于单词不以空格分隔的语言</span></span><br><span class="line"><span class="comment">#Spotify.ID = &quot;&quot;  #Spotify 客户端 ID。 如果您想要艺术家图像，则为必填项</span></span><br><span class="line"><span class="comment">#Spotify.Secret = &quot;&quot;  #Spotify 客户端密钥。如果需要艺术家图像，则为必填项</span></span><br><span class="line"><span class="comment">#SubsonicArtistParticipations = &#x27;FALSE&#x27;  #请求艺人专辑时，请包括艺人参与的专辑（例如：各种艺人合辑）</span></span><br></pre></td></tr></table></figure></div>
-
-<p><a class="link"   href="https://www.navidrome.org/docs/usage/configuration-options/#available-options" >Docker变量配置说明 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
+    <title>UNRAID 为 Docker 设置全局代理</title>
+    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">HTTP_PROXY=http://127.0.0.1:20171</span><br><span class="line">HTTPS_PROXY=http://127.0.0.1:20171</span><br></pre></td></tr></table></figure></div>]]></content>
       <categories>
         <category>计算机</category>
       </categories>
       <tags>
-        <tag>Navidrome</tag>
-        <tag>配置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Restic 文件备份</title>
-    <url>/2024/Restic%20%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仓库密码</span></span><br><span class="line"><span class="built_in">export</span> RESTIC_PASSWORD=</span><br><span class="line"><span class="comment"># appdata</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/cache/appdata</span><br><span class="line"><span class="comment"># music</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/disk1/PTdown/bz/music</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>Restic</tag>
-        <tag>备份</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Navidrome 不同艺术家导致同一专辑被拆分</title>
-    <url>/2024/Navidrome%E4%B8%8D%E5%90%8C%E8%89%BA%E6%9C%AF%E5%AE%B6%E5%AF%BC%E8%87%B4%E5%90%8C%E4%B8%80%E4%B8%93%E8%BE%91%E8%A2%AB%E6%8B%86%E5%88%86/</url>
-    <content><![CDATA[<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>查看几个存在相同问题的专辑发现其共同的问题是专辑内歌曲的<code>艺术家</code>不同，且<code>专辑艺术家</code>为空（当然这已经是修改之后的了）。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-03-09%2020.19.01-bheh.webp"
-                      alt="截屏2024-03-09 20.19.01-bheh"
-                ></p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>解决思路就是使用<a class="link"   href="https://github.com/xhongc/music-tag-web" >Music-tag-web <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>或其他软件修改歌曲信息，修改<code>专辑艺术家</code>为同一艺术家（修改该项并不会影响软件中的艺术家显示）。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-03-09%2020.24.37.webp"
-                      alt="截屏2024-03-09 20.24.37"
-                ></p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>Navidrome</tag>
-        <tag>专辑</tag>
+        <tag>UNRAID</tag>
+        <tag>Docker</tag>
+        <tag>代理</tag>
       </tags>
   </entry>
   <entry>
@@ -257,29 +294,6 @@
       </categories>
       <tags>
         <tag>R</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>RStudio 绘图中文字符乱码问题</title>
-    <url>/2024/R%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;Cairo&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<p>打开R studio → Tools → Global Options → General → Graphics</p>
-<p>将 Graphics 中 Graphics Device 设置为 Cairo</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-07%2019.39.10.webp"
-                      alt="截屏2024-11-07 19.39.10"
-                ></p>
-<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;showtext&quot;</span><span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>showtext<span class="punctuation">)</span></span><br><span class="line">showtext_auto<span class="punctuation">(</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>绘图</tag>
-        <tag>Cairo</tag>
       </tags>
   </entry>
   <entry>
@@ -355,6 +369,30 @@
       </tags>
   </entry>
   <entry>
+    <title>iOS 无法开启“家人共享”</title>
+    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
+    <content><![CDATA[<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/IMG_5988.webp"
+                      alt="IMG_5988"
+                ></p>
+<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>找到icloud设置</p>
+<p>找到管理你的icloud</p>
+<p>找到家人共享</p>
+<p>关掉</p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>iCloud</tag>
+        <tag>家人共享</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>倾向性评分匹配 (Propensity Score Matching, PSM)</title>
     <url>/2024/%E5%80%BE%E5%90%91%E6%80%A7%E8%AF%84%E5%88%86%E5%8C%B9%E9%85%8D%EF%BC%88Propensity%20Score%20Matching,%20PSM%EF%BC%89/</url>
     <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>研究类型：①实验性研究；②观察性研究</p>
@@ -396,44 +434,6 @@
       <tags>
         <tag>青龙面板</tag>
         <tag>京东</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iOS 无法开启“家人共享”</title>
-    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
-    <content><![CDATA[<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/IMG_5988.webp"
-                      alt="IMG_5988"
-                ></p>
-<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>找到icloud设置</p>
-<p>找到管理你的icloud</p>
-<p>找到家人共享</p>
-<p>关掉</p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>iCloud</tag>
-        <tag>家人共享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>UNRAID 为 Docker 设置全局代理</title>
-    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
-    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">HTTP_PROXY=http://127.0.0.1:20171</span><br><span class="line">HTTPS_PROXY=http://127.0.0.1:20171</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>UNRAID</tag>
-        <tag>Docker</tag>
-        <tag>代理</tag>
       </tags>
   </entry>
 </search>
