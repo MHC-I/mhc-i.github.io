@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>GPT 中译英指令</title>
-    <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
-<blockquote>
-<p>我想让你充当一名科学的英汉翻译，我会向你提供一些英文段落，你的任务是准确、学术性地将这些段落翻译成中文。翻译后不要重复原文提供的段落。你应该使用人工智能工具，如自然语言处理，以及有关有效写作技巧的修辞知识和经验来回答。以下是我提供的段落，请告诉我是用什么语言写的，然后翻译：</p>
-</blockquote>
-<p>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；3. 确保语言的逻辑关系准确，条理清晰；4. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；5. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>GPT</tag>
-        <tag>翻译</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo发布之后GitHub Pages自定义域名失效</title>
     <url>/2024/Hexo%E5%8F%91%E5%B8%83%E4%B9%8B%E5%90%8EGitHub%20Pages%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%A4%B1%E6%95%88/</url>
     <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>每次<code>hexo deploy</code>之后，访问自己的GitHub Pages自定义域名会404，重新查看仓库的设置发现Custom domain项变成空白</p>
@@ -36,6 +19,23 @@
         <tag>Hexo</tag>
         <tag>GitHub Pages</tag>
         <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GPT 中译英指令</title>
+    <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
+<blockquote>
+<p>我想让你充当一名科学的英汉翻译，我会向你提供一些英文段落，你的任务是准确、学术性地将这些段落翻译成中文。翻译后不要重复原文提供的段落。你应该使用人工智能工具，如自然语言处理，以及有关有效写作技巧的修辞知识和经验来回答。以下是我提供的段落，请告诉我是用什么语言写的，然后翻译：</p>
+</blockquote>
+<p>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；3. 确保语言的逻辑关系准确，条理清晰；4. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；5. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>GPT</tag>
+        <tag>翻译</tag>
       </tags>
   </entry>
   <entry>
