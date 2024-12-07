@@ -38,6 +38,23 @@
       </tags>
   </entry>
   <entry>
+    <title>GPT 中译英指令</title>
+    <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
+<blockquote>
+<p>我想让你充当一名科学的英汉翻译，我会向你提供一些英文段落，你的任务是准确、学术性地将这些段落翻译成中文。翻译后不要重复原文提供的段落。你应该使用人工智能工具，如自然语言处理，以及有关有效写作技巧的修辞知识和经验来回答。以下是我提供的段落，请告诉我是用什么语言写的，然后翻译：</p>
+</blockquote>
+<p>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；3. 确保语言的逻辑关系准确，条理清晰；4. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；5. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>GPT</tag>
+        <tag>翻译</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo发布之后GitHub Pages自定义域名失效</title>
     <url>/2024/Hexo%E5%8F%91%E5%B8%83%E4%B9%8B%E5%90%8EGitHub%20Pages%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%A4%B1%E6%95%88/</url>
     <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>每次<code>hexo deploy</code>之后，访问自己的GitHub Pages自定义域名会404，重新查看仓库的设置发现Custom domain项变成空白</p>
@@ -57,23 +74,6 @@
         <tag>Hexo</tag>
         <tag>GitHub Pages</tag>
         <tag>域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GPT 中译英指令</title>
-    <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
-<blockquote>
-<p>我想让你充当一名科学的英汉翻译，我会向你提供一些英文段落，你的任务是准确、学术性地将这些段落翻译成中文。翻译后不要重复原文提供的段落。你应该使用人工智能工具，如自然语言处理，以及有关有效写作技巧的修辞知识和经验来回答。以下是我提供的段落，请告诉我是用什么语言写的，然后翻译：</p>
-</blockquote>
-<p>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；3. 确保语言的逻辑关系准确，条理清晰；4. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；5. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>GPT</tag>
-        <tag>翻译</tag>
       </tags>
   </entry>
   <entry>
@@ -118,18 +118,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Restic 文件备份</title>
-    <url>/2024/Restic%20%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仓库密码</span></span><br><span class="line"><span class="built_in">export</span> RESTIC_PASSWORD=</span><br><span class="line"><span class="comment"># appdata</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/cache/appdata</span><br><span class="line"><span class="comment"># music</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/disk1/PTdown/bz/music</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>Restic</tag>
-        <tag>备份</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Navidrome 不同艺术家导致同一专辑被拆分</title>
     <url>/2024/Navidrome%E4%B8%8D%E5%90%8C%E8%89%BA%E6%9C%AF%E5%AE%B6%E5%AF%BC%E8%87%B4%E5%90%8C%E4%B8%80%E4%B8%93%E8%BE%91%E8%A2%AB%E6%8B%86%E5%88%86/</url>
     <content><![CDATA[<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>查看几个存在相同问题的专辑发现其共同的问题是专辑内歌曲的<code>艺术家</code>不同，且<code>专辑艺术家</code>为空（当然这已经是修改之后的了）。</p>
@@ -168,140 +156,6 @@
       <tags>
         <tag>Navidrome</tag>
         <tag>配置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>R语言常用代码</title>
-    <url>/2024/R%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/</url>
-    <content><![CDATA[<h2 id="基本处理"><a href="#基本处理" class="headerlink" title="基本处理"></a>基本处理</h2><h3 id="数据清理"><a href="#数据清理" class="headerlink" title="数据清理"></a>数据清理</h3><h4 id="删除包含空值的个案"><a href="#删除包含空值的个案" class="headerlink" title="删除包含空值的个案"></a>删除包含空值的个案</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_cache <span class="operator">&lt;-</span> database_group<span class="punctuation">[</span>complete.cases<span class="punctuation">(</span>database_group<span class="operator">$</span>group<span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="筛选数据"><a href="#筛选数据" class="headerlink" title="筛选数据"></a>筛选数据</h3><h4 id="Subset"><a href="#Subset" class="headerlink" title="Subset"></a>Subset</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">subset_df <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>df<span class="punctuation">,</span> tl5 <span class="operator">+</span> tl6 <span class="operator">+</span> tl7 <span class="operator">+</span> tl8 <span class="operator">==</span> <span class="number">3</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<p>可以结合逻辑运算符来指定多个条件，如：<code>&amp;</code>（与）、<code>|</code>（或）、<code>!</code>（非）</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">subset_df <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>df<span class="punctuation">,</span> tl5 <span class="operator">+</span> tl6 <span class="operator">+</span> tl7 <span class="operator">+</span> tl8 <span class="operator">==</span> <span class="number">3</span> <span class="operator">&amp;</span> tl1 <span class="operator">+</span> tl2 <span class="operator">+</span> tl3 <span class="operator">+</span> tl4 <span class="operator">==</span> <span class="number">0</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h4 id="逻辑条件"><a href="#逻辑条件" class="headerlink" title="逻辑条件"></a>逻辑条件</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">filtered_df <span class="operator">&lt;-</span> df<span class="punctuation">[</span>df<span class="operator">$</span>tl5 <span class="operator">+</span> df<span class="operator">$</span>tl6 <span class="operator">+</span> df<span class="operator">$</span>tl7 <span class="operator">+</span> df<span class="operator">$</span>tl8 <span class="operator">==</span> <span class="number">3</span><span class="punctuation">,</span> <span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
-
-<p>将<code>group</code>列数值为2&#x2F;3的个案生成新数据框<code>database_G23</code></p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_G23 <span class="operator">&lt;-</span> database_5mm<span class="punctuation">[</span>database_5mm<span class="operator">$</span>group <span class="operator">%in%</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">2</span><span class="punctuation">,</span><span class="number">3</span><span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data<span class="operator">$</span>group<span class="punctuation">[</span>data<span class="operator">$</span>seg4 <span class="operator">+</span> data<span class="operator">$</span>seg5 <span class="operator">==</span> <span class="number">1</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="number">1</span></span><br><span class="line">data<span class="operator">$</span>group<span class="punctuation">[</span>data<span class="operator">$</span>seg4 <span class="operator">+</span> data<span class="operator">$</span>seg5 <span class="operator">==</span> <span class="number">2</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="number">2</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h3><p>根据键值合并两张表&#x3D;VLOOKUP</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line"><span class="comment">#vlookup </span></span><br><span class="line">merge<span class="punctuation">(</span>tableA<span class="punctuation">,</span>tableB<span class="punctuation">,</span>by<span class="operator">=</span><span class="string">&quot;idno&quot;</span><span class="punctuation">)</span></span><br><span class="line">merge<span class="punctuation">(</span>tableA<span class="punctuation">,</span>tableB<span class="punctuation">,</span>by<span class="operator">=</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;id&quot;</span><span class="punctuation">,</span> <span class="string">&quot;sex&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="Apply"><a href="#Apply" class="headerlink" title="Apply"></a>Apply</h3><p>apply函数是最常用的代替for循环的函数。apply函数可以对矩阵、数据框、数组(二维、多维)，按行或列进行循环计算，对子元素进行迭代，并把子元素以参数传递的形式给自定义的FUN函数中，并以返回计算结果。</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">apply<span class="punctuation">(</span>X<span class="punctuation">,</span> MARGIN<span class="punctuation">,</span> FUN<span class="punctuation">,</span> ...<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># X:数组、矩阵、数据框</span></span><br><span class="line"><span class="comment"># MARGIN: 按行计算或按按列计算，1表示按行，2表示按列</span></span><br><span class="line"><span class="comment"># FUN: 自定义的调用函数</span></span><br></pre></td></tr></table></figure></div>
-
-<p>sltl是肿瘤的长径，sltw是肿瘤的宽径，我想要求肿瘤的最长径，并且存储在totaltd列中</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_outcome<span class="punctuation">[</span>totaltd<span class="punctuation">]</span><span class="operator">&lt;-</span> apply<span class="punctuation">(</span>database_outcome<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;sltl&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;sltw&#x27;</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation">,</span> <span class="number">1</span><span class="punctuation">,</span> <span class="built_in">max</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="View"><a href="#View" class="headerlink" title="View"></a>View</h3><p>查看数据框特定的某几列（尤其是在数据框列数特别多的时候蛮有用）</p>
- <div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">View<span class="punctuation">(</span>database_outcome<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;sltl&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;sltw&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;totaltd&#x27;</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="Ifelse"><a href="#Ifelse" class="headerlink" title="Ifelse"></a>Ifelse</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span><span class="punctuation">(</span>con<span class="punctuation">,</span> statement1<span class="punctuation">,</span> statement2<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># con是逻辑条件，当逻辑条件的值为TRUE时，则输出statement1的值，否则输出statement2的值。</span></span><br><span class="line"><span class="comment"># 函数可以多层嵌套</span></span><br></pre></td></tr></table></figure></div>
-
-<p>我要根据<code>srmar</code>的值将数据分为3组，<code>0.5&lt;srmar&lt;=1</code>为组1，<code>srmar&gt;1</code>为组2，<code>0&lt;srmar≤0.5</code>为组3（不包含srmar为0的值），如果都不满足则为<code>NA</code>（空值）</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_5mm<span class="operator">$</span>group <span class="operator">&lt;-</span> ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar <span class="operator">&gt;</span> <span class="number">0.5</span> <span class="operator">&amp;</span> database_5mm<span class="operator">$</span>srmar <span class="operator">&lt;=</span> <span class="number">1</span><span class="punctuation">,</span><span class="number">1</span><span class="punctuation">,</span>ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar<span class="operator">&gt;</span><span class="number">1</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">,</span>ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar<span class="operator">&gt;</span><span class="number">0</span> <span class="operator">&amp;</span> database_5mm<span class="operator">$</span>srmar <span class="operator">&lt;=</span> <span class="number">0.5</span> <span class="punctuation">,</span><span class="number">3</span><span class="punctuation">,</span><span class="literal">NA</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="分类变量"><a href="#分类变量" class="headerlink" title="分类变量"></a>分类变量</h3><p>批量设置分类变量</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">factor_list <span class="operator">&lt;-</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;A&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;B&#x27;</span><span class="punctuation">)</span></span><br><span class="line">    <span class="keyword">for</span><span class="punctuation">(</span>var <span class="keyword">in</span> factor_list<span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">        data_total_type<span class="punctuation">[[</span>var<span class="punctuation">]</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> as.factor<span class="punctuation">(</span>data_total_type<span class="punctuation">[[</span>var<span class="punctuation">]</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
-
-<h2 id="基线水平"><a href="#基线水平" class="headerlink" title="基线水平"></a>基线水平</h2><h2 id="生存分析"><a href="#生存分析" class="headerlink" title="生存分析"></a>生存分析</h2><h3 id="OS"><a href="#OS" class="headerlink" title="OS"></a>OS</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">ggsurvplot<span class="punctuation">(</span></span><br><span class="line">    survfit<span class="punctuation">(</span>Surv<span class="punctuation">(</span>OS<span class="punctuation">,</span>StatusforOS<span class="punctuation">)</span><span class="operator">~</span>group<span class="punctuation">,</span>data<span class="operator">=</span>df<span class="punctuation">)</span><span class="punctuation">,</span>  </span><br><span class="line">    <span class="comment"># OS 生存时间</span></span><br><span class="line">    <span class="comment"># StatusforOS 生存状态，1表示事件发生，即死亡</span></span><br><span class="line">    <span class="comment"># group 为分组依据</span></span><br><span class="line">    <span class="comment"># data为数据框</span></span><br><span class="line">    legend.title <span class="operator">=</span> <span class="string">&quot;Group&quot;</span><span class="punctuation">,</span> <span class="comment"># 图例的标题</span></span><br><span class="line">    legend.labs <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;RH&quot;</span><span class="punctuation">,</span> <span class="string">&quot;RS&quot;</span><span class="punctuation">)</span><span class="punctuation">,</span> <span class="comment"># 图例显示的名称</span></span><br><span class="line">    risk.table <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="comment"># 是否显示risk table</span></span><br><span class="line">    pval <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="comment"># 是否显示P value </span></span><br><span class="line">    conf.int <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span>         </span><br><span class="line">    xlab <span class="operator">=</span> <span class="string">&quot;Overall Survival (months)&quot;</span><span class="punctuation">,</span>   <span class="comment"># 横坐标标题</span></span><br><span class="line">    break.time.by <span class="operator">=</span> <span class="number">12</span><span class="punctuation">,</span>     <span class="comment"># 横坐标刻度</span></span><br><span class="line">    ggtheme <span class="operator">=</span> theme_light<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">,</span> </span><br><span class="line">    risk.table.y.text.col <span class="operator">=</span> <span class="built_in">T</span><span class="punctuation">,</span> <span class="comment"># risk table文字注释颜色</span></span><br><span class="line">    risk.table.y.text <span class="operator">=</span> <span class="literal">FALSE</span><span class="punctuation">,</span> <span class="comment"># risk table显示条形而不是文字</span></span><br><span class="line">    <span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-<h2 id="倾向性评分匹配（PSM）"><a href="#倾向性评分匹配（PSM）" class="headerlink" title="倾向性评分匹配（PSM）"></a>倾向性评分匹配（PSM）</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_psm <span class="operator">&lt;-</span> matchit<span class="punctuation">(</span>group<span class="operator">~</span>UICC7<span class="punctuation">,</span>data<span class="operator">=</span>data_cache1<span class="punctuation">,</span>method <span class="operator">=</span> <span class="string">&quot;nearest&quot;</span><span class="punctuation">,</span>ratio<span class="operator">=</span><span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"><span class="comment"># caliper = 0.2, 添加卡钳值</span></span><br><span class="line">summary<span class="punctuation">(</span>data_psm<span class="punctuation">)</span></span><br><span class="line">data_postpsm <span class="operator">&lt;-</span> match.data<span class="punctuation">(</span>data_psm<span class="punctuation">)</span> </span><br><span class="line"><span class="comment"># 将匹配后的数据集存储在data_psm中</span></span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WebP格式转换</title>
-    <url>/2024/WebP%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<blockquote>
-<p>WebP‌是一种同时提供有损压缩与无损压缩的图片文件格式，派生自视频编码格式VP8，由Google在购买On2 Technologies后发展出来，并以BSD授权条款发布。WebP格式的目标是减少文件大小，同时保持与JPEG格式相同的图片质量，从而减少图片在网络上的传输时间。</p>
-</blockquote>
-<p>WebP在保证图片质量的前提下大幅压缩图片大小，可大幅加快博客的加载速度，同时减少流量支出</p>
-<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><h3 id="简单"><a href="#简单" class="headerlink" title="简单"></a>简单</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">/opt/homebrew/bin/cwebp <span class="string">&quot;<span class="variable">$f</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;f%.*&#125;</span>.webp&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p><strong>使用该命令转换之后在 iPhone 中拍摄的竖直图会变为横躺样式</strong></p>
-<p>因为 iPhone 拍摄的照片，其实方向就是平躺的，只是其元数据 EXIF 中包含了旋转信息，告诉了打开该图片的查看器应该旋转一个什么角度，但是转换为WebP之后，该EXIF似乎不能被很好支持</p>
-<p>具体原因可参考<a class="link"   href="https://www.ddch.one/2024/05/18/WebpConversionHow/" >iPhone 照片转换 WebP 格式的奥秘 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h3><p>首先需要安装<code>exiftool</code>和<code>imagemagick</code></p>
-<div class="highlight-container" data-rel="Mipsasm"><figure class="iseeu highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>exiftool</span><br><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>imagemagick</span><br></pre></td></tr></table></figure></div>
-
-<p>进阶版命令，大致原理是使用exiftool读取照片EXIF方向信息，使用imagemagick根据EXIF方向信息旋转照片，清除EXIF信息，再进行WebP的转换</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$f</span>&quot;</span></span><br><span class="line">    IMAGE_FILE=<span class="string">&quot;<span class="variable">$f</span>&quot;</span></span><br><span class="line">    TEMP_IMAGE=<span class="string">&quot;.<span class="variable">$&#123;FILENAME&#125;</span>_temp.<span class="variable">$&#123;EXTENSION&#125;</span>&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 检测旋转信息并旋转图片</span></span><br><span class="line">    ORIENTATION=$(/opt/homebrew/bin/exiftool -Orientation -n -S <span class="string">&quot;<span class="variable">$IMAGE_FILE</span>&quot;</span> | <span class="built_in">cut</span> -d: -f2 | <span class="built_in">tr</span> -d <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$ORIENTATION</span>&quot;</span> != <span class="string">&quot;&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">        <span class="comment"># 根据旋转标志旋转图像</span></span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$ORIENTATION</span>&quot;</span> <span class="keyword">in</span></span><br><span class="line">            1)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;0&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">            3)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;180&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">            6)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;270&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">            8)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;90&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">            *)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;0&quot;</span></span><br><span class="line">                <span class="built_in">echo</span> <span class="string">&quot;No rotation needed or unsupported rotation tag.&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">        <span class="keyword">esac</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 旋转图片</span></span><br><span class="line">        /opt/homebrew/bin/magick <span class="string">&quot;<span class="variable">$IMAGE_FILE</span>&quot;</span> -rotate $((<span class="number">0</span> - <span class="variable">$ROTATE_DEGREES</span>)) <span class="string">&quot;<span class="variable">$TEMP_IMAGE</span>&quot;</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 删除旋转 EXIF 信息</span></span><br><span class="line">    exiftool -Orientation= -overwrite_original <span class="string">&quot;<span class="variable">$TEMP_IMAGE</span>&quot;</span></span><br><span class="line">    /opt/homebrew/bin/cwebp <span class="string">&quot;<span class="variable">$TEMP_IMAGE</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;f%.*&#125;</span>.webp&quot;</span></span><br><span class="line">    <span class="built_in">rm</span> <span class="string">&quot;<span class="variable">$TEMP_IMAGE</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></div>
-
-<h2 id="自动操作"><a href="#自动操作" class="headerlink" title="自动操作"></a>自动操作</h2><p>打开<code>自动操作</code>APP，新建<code>快速操作</code></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.50.37.webp"
-                      alt="截屏2024-11-15 12.50.37"
-                ></p>
-<p>拖入<code>运行shell脚本</code>，<code>传递输入</code>一定要选<code>作为自变量</code>，其他设置可参考下图自定义</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.52.55.webp"
-                      alt="截屏2024-11-15 12.52.55"
-                ></p>
-<p>写入脚本内容（或使用上方进阶命令）</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$f</span>&quot;</span></span><br><span class="line">	/opt/homebrew/bin/cwebp <span class="string">&quot;<span class="variable">$f</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;f%.*&#125;</span>.webp&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></div>
-
-<p>选中图片后在快速操作菜单即可进行快速WebP转换</p>
-<div align="center"> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.56.05.webp"
-                      style="zoom : 40%" 
-                > </div>
-
-
-<h2 id="Platypus"><a href="#Platypus" class="headerlink" title="Platypus"></a>Platypus</h2><p>使用<a class="link"   href="https://github.com/sveinbjornt/Platypus" >Platypus <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>可以将脚本转换为原生应用，实现将图片拖放后自动转换为WebP。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.33.36.webp"
-                      alt="截屏2024-11-15 12.33.36"
-                ><br>Brew安装Platypus，或者直接下载安装</p>
-<div class="highlight-container" data-rel="Mipsasm"><figure class="iseeu highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>--cask platypus</span><br></pre></td></tr></table></figure></div>
-
-<p>点击<code>+New</code>新建脚本，并写入脚本内容</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">/opt/homebrew/bin/cwebp <span class="string">&quot;<span class="variable">$1</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;1%.*&#125;</span>.webp&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<blockquote>
-<p>进阶命令自行测试一下，我使用快速操作很方便，并且可以批量操作，未进一步测试</p>
-</blockquote>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.37.44.webp"
-                      alt="截屏2024-11-15 12.37.44"
-                ><br><code>Interface</code> 选择<code>Droplet</code>，点击<code>Accept dropped items</code>后的<code>setting</code></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.42.41.webp"
-                      alt="截屏2024-11-15 12.42.41"
-                ><br>勾选<code>Accept dropped files</code>，下面的<code>+/-</code>无法点击，分别拖入jpg图片和png图片即可添加两个后缀，其他照片同理</p>
-<p>将图片拖到<code>Generic Application</code>即可添加APP图标，图标可以到<a class="link"   href="https://macosicons.com/#/" >macOSicons <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>下载</p>
-<p><code>Create App</code>即可生成APP</p>
-<p>引文：</p>
-<ul>
-<li><a class="link"   href="https://blog.powersee.top/2023/04/automator-quick-webp/" >自动操作 automator 快速将图片转为 webp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   href="https://blog.powersee.top/2023/03/create-mac-app-from-command-line-scripts/" >将 Mac 上的 shell 脚本，变成原生 Mac 图形应用 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   href="https://www.ddch.one/2024/05/18/WebpConversionHow/" >iPhone 照片转换 WebP 格式的奥秘 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-        <tag>WebP</tag>
       </tags>
   </entry>
   <entry>
@@ -414,15 +268,85 @@
       </tags>
   </entry>
   <entry>
-    <title>中文催稿信</title>
-    <url>/2024/%E4%B8%AD%E6%96%87%E5%82%AC%E7%A8%BF%E4%BF%A1/</url>
-    <content><![CDATA[<p>尊敬的【xxx杂志】编辑：<br>    您好！<br>    我于【xx年xx月xx日】向贵刊来稿《xxxxx》一份（稿件号：xxx），稿件已进入专家外审3月余，状态未更新，来信主要想咨询稿件是否有进一步修改意见，以便尽早按意见调整修改稿件。<br>    感谢您在百忙中抽空查看此信，我非常期待您的回复，并衷心希望论文能顺利在贵刊发表。祝您工作顺利，万事顺意!<br>    此致，<br>敬礼！<br>xxxx医院 xxx（右对齐）<br>xx年xx月xx日（右对齐）</p>
-]]></content>
+    <title>Restic 文件备份</title>
+    <url>/2024/Restic%20%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仓库密码</span></span><br><span class="line"><span class="built_in">export</span> RESTIC_PASSWORD=</span><br><span class="line"><span class="comment"># appdata</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/cache/appdata</span><br><span class="line"><span class="comment"># music</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/disk1/PTdown/bz/music</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Restic</tag>
+        <tag>备份</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R语言常用代码</title>
+    <url>/2024/R%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/</url>
+    <content><![CDATA[<h2 id="基本处理"><a href="#基本处理" class="headerlink" title="基本处理"></a>基本处理</h2><h3 id="数据清理"><a href="#数据清理" class="headerlink" title="数据清理"></a>数据清理</h3><h4 id="删除包含空值的个案"><a href="#删除包含空值的个案" class="headerlink" title="删除包含空值的个案"></a>删除包含空值的个案</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_cache <span class="operator">&lt;-</span> database_group<span class="punctuation">[</span>complete.cases<span class="punctuation">(</span>database_group<span class="operator">$</span>group<span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="筛选数据"><a href="#筛选数据" class="headerlink" title="筛选数据"></a>筛选数据</h3><h4 id="Subset"><a href="#Subset" class="headerlink" title="Subset"></a>Subset</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">subset_df <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>df<span class="punctuation">,</span> tl5 <span class="operator">+</span> tl6 <span class="operator">+</span> tl7 <span class="operator">+</span> tl8 <span class="operator">==</span> <span class="number">3</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<p>可以结合逻辑运算符来指定多个条件，如：<code>&amp;</code>（与）、<code>|</code>（或）、<code>!</code>（非）</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">subset_df <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>df<span class="punctuation">,</span> tl5 <span class="operator">+</span> tl6 <span class="operator">+</span> tl7 <span class="operator">+</span> tl8 <span class="operator">==</span> <span class="number">3</span> <span class="operator">&amp;</span> tl1 <span class="operator">+</span> tl2 <span class="operator">+</span> tl3 <span class="operator">+</span> tl4 <span class="operator">==</span> <span class="number">0</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="逻辑条件"><a href="#逻辑条件" class="headerlink" title="逻辑条件"></a>逻辑条件</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">filtered_df <span class="operator">&lt;-</span> df<span class="punctuation">[</span>df<span class="operator">$</span>tl5 <span class="operator">+</span> df<span class="operator">$</span>tl6 <span class="operator">+</span> df<span class="operator">$</span>tl7 <span class="operator">+</span> df<span class="operator">$</span>tl8 <span class="operator">==</span> <span class="number">3</span><span class="punctuation">,</span> <span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
+
+<p>将<code>group</code>列数值为2&#x2F;3的个案生成新数据框<code>database_G23</code></p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_G23 <span class="operator">&lt;-</span> database_5mm<span class="punctuation">[</span>database_5mm<span class="operator">$</span>group <span class="operator">%in%</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">2</span><span class="punctuation">,</span><span class="number">3</span><span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data<span class="operator">$</span>group<span class="punctuation">[</span>data<span class="operator">$</span>seg4 <span class="operator">+</span> data<span class="operator">$</span>seg5 <span class="operator">==</span> <span class="number">1</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="number">1</span></span><br><span class="line">data<span class="operator">$</span>group<span class="punctuation">[</span>data<span class="operator">$</span>seg4 <span class="operator">+</span> data<span class="operator">$</span>seg5 <span class="operator">==</span> <span class="number">2</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="number">2</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h3><p>根据键值合并两张表&#x3D;VLOOKUP</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line"><span class="comment">#vlookup </span></span><br><span class="line">merge<span class="punctuation">(</span>tableA<span class="punctuation">,</span>tableB<span class="punctuation">,</span>by<span class="operator">=</span><span class="string">&quot;idno&quot;</span><span class="punctuation">)</span></span><br><span class="line">merge<span class="punctuation">(</span>tableA<span class="punctuation">,</span>tableB<span class="punctuation">,</span>by<span class="operator">=</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;id&quot;</span><span class="punctuation">,</span> <span class="string">&quot;sex&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Apply"><a href="#Apply" class="headerlink" title="Apply"></a>Apply</h3><p>apply函数是最常用的代替for循环的函数。apply函数可以对矩阵、数据框、数组(二维、多维)，按行或列进行循环计算，对子元素进行迭代，并把子元素以参数传递的形式给自定义的FUN函数中，并以返回计算结果。</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">apply<span class="punctuation">(</span>X<span class="punctuation">,</span> MARGIN<span class="punctuation">,</span> FUN<span class="punctuation">,</span> ...<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># X:数组、矩阵、数据框</span></span><br><span class="line"><span class="comment"># MARGIN: 按行计算或按按列计算，1表示按行，2表示按列</span></span><br><span class="line"><span class="comment"># FUN: 自定义的调用函数</span></span><br></pre></td></tr></table></figure></div>
+
+<p>sltl是肿瘤的长径，sltw是肿瘤的宽径，我想要求肿瘤的最长径，并且存储在totaltd列中</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_outcome<span class="punctuation">[</span>totaltd<span class="punctuation">]</span><span class="operator">&lt;-</span> apply<span class="punctuation">(</span>database_outcome<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;sltl&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;sltw&#x27;</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation">,</span> <span class="number">1</span><span class="punctuation">,</span> <span class="built_in">max</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="View"><a href="#View" class="headerlink" title="View"></a>View</h3><p>查看数据框特定的某几列（尤其是在数据框列数特别多的时候蛮有用）</p>
+ <div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">View<span class="punctuation">(</span>database_outcome<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;sltl&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;sltw&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;totaltd&#x27;</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Ifelse"><a href="#Ifelse" class="headerlink" title="Ifelse"></a>Ifelse</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span><span class="punctuation">(</span>con<span class="punctuation">,</span> statement1<span class="punctuation">,</span> statement2<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># con是逻辑条件，当逻辑条件的值为TRUE时，则输出statement1的值，否则输出statement2的值。</span></span><br><span class="line"><span class="comment"># 函数可以多层嵌套</span></span><br></pre></td></tr></table></figure></div>
+
+<p>我要根据<code>srmar</code>的值将数据分为3组，<code>0.5&lt;srmar&lt;=1</code>为组1，<code>srmar&gt;1</code>为组2，<code>0&lt;srmar≤0.5</code>为组3（不包含srmar为0的值），如果都不满足则为<code>NA</code>（空值）</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_5mm<span class="operator">$</span>group <span class="operator">&lt;-</span> ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar <span class="operator">&gt;</span> <span class="number">0.5</span> <span class="operator">&amp;</span> database_5mm<span class="operator">$</span>srmar <span class="operator">&lt;=</span> <span class="number">1</span><span class="punctuation">,</span><span class="number">1</span><span class="punctuation">,</span>ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar<span class="operator">&gt;</span><span class="number">1</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">,</span>ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar<span class="operator">&gt;</span><span class="number">0</span> <span class="operator">&amp;</span> database_5mm<span class="operator">$</span>srmar <span class="operator">&lt;=</span> <span class="number">0.5</span> <span class="punctuation">,</span><span class="number">3</span><span class="punctuation">,</span><span class="literal">NA</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="分类变量"><a href="#分类变量" class="headerlink" title="分类变量"></a>分类变量</h3><p>批量设置分类变量</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">factor_list <span class="operator">&lt;-</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;A&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;B&#x27;</span><span class="punctuation">)</span></span><br><span class="line">    <span class="keyword">for</span><span class="punctuation">(</span>var <span class="keyword">in</span> factor_list<span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">        data_total_type<span class="punctuation">[[</span>var<span class="punctuation">]</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> as.factor<span class="punctuation">(</span>data_total_type<span class="punctuation">[[</span>var<span class="punctuation">]</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="基线水平"><a href="#基线水平" class="headerlink" title="基线水平"></a>基线水平</h2><h2 id="生存分析"><a href="#生存分析" class="headerlink" title="生存分析"></a>生存分析</h2><h3 id="OS"><a href="#OS" class="headerlink" title="OS"></a>OS</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">ggsurvplot<span class="punctuation">(</span></span><br><span class="line">    survfit<span class="punctuation">(</span>Surv<span class="punctuation">(</span>OS<span class="punctuation">,</span>StatusforOS<span class="punctuation">)</span><span class="operator">~</span>group<span class="punctuation">,</span>data<span class="operator">=</span>df<span class="punctuation">)</span><span class="punctuation">,</span>  </span><br><span class="line">    <span class="comment"># OS 生存时间</span></span><br><span class="line">    <span class="comment"># StatusforOS 生存状态，1表示事件发生，即死亡</span></span><br><span class="line">    <span class="comment"># group 为分组依据</span></span><br><span class="line">    <span class="comment"># data为数据框</span></span><br><span class="line">    legend.title <span class="operator">=</span> <span class="string">&quot;Group&quot;</span><span class="punctuation">,</span> <span class="comment"># 图例的标题</span></span><br><span class="line">    legend.labs <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;RH&quot;</span><span class="punctuation">,</span> <span class="string">&quot;RS&quot;</span><span class="punctuation">)</span><span class="punctuation">,</span> <span class="comment"># 图例显示的名称</span></span><br><span class="line">    risk.table <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="comment"># 是否显示risk table</span></span><br><span class="line">    pval <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="comment"># 是否显示P value </span></span><br><span class="line">    conf.int <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span>         </span><br><span class="line">    xlab <span class="operator">=</span> <span class="string">&quot;Overall Survival (months)&quot;</span><span class="punctuation">,</span>   <span class="comment"># 横坐标标题</span></span><br><span class="line">    break.time.by <span class="operator">=</span> <span class="number">12</span><span class="punctuation">,</span>     <span class="comment"># 横坐标刻度</span></span><br><span class="line">    ggtheme <span class="operator">=</span> theme_light<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">,</span> </span><br><span class="line">    risk.table.y.text.col <span class="operator">=</span> <span class="built_in">T</span><span class="punctuation">,</span> <span class="comment"># risk table文字注释颜色</span></span><br><span class="line">    risk.table.y.text <span class="operator">=</span> <span class="literal">FALSE</span><span class="punctuation">,</span> <span class="comment"># risk table显示条形而不是文字</span></span><br><span class="line">    <span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+<h2 id="倾向性评分匹配（PSM）"><a href="#倾向性评分匹配（PSM）" class="headerlink" title="倾向性评分匹配（PSM）"></a>倾向性评分匹配（PSM）</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_psm <span class="operator">&lt;-</span> matchit<span class="punctuation">(</span>group<span class="operator">~</span>UICC7<span class="punctuation">,</span>data<span class="operator">=</span>data_cache1<span class="punctuation">,</span>method <span class="operator">=</span> <span class="string">&quot;nearest&quot;</span><span class="punctuation">,</span>ratio<span class="operator">=</span><span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"><span class="comment"># caliper = 0.2, 添加卡钳值</span></span><br><span class="line">summary<span class="punctuation">(</span>data_psm<span class="punctuation">)</span></span><br><span class="line">data_postpsm <span class="operator">&lt;-</span> match.data<span class="punctuation">(</span>data_psm<span class="punctuation">)</span> </span><br><span class="line"><span class="comment"># 将匹配后的数据集存储在data_psm中</span></span><br></pre></td></tr></table></figure></div>]]></content>
       <categories>
         <category>科研</category>
       </categories>
       <tags>
-        <tag>投稿</tag>
+        <tag>R</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RStudio 绘图中文字符乱码问题</title>
+    <url>/2024/R%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;Cairo&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<p>打开R studio → Tools → Global Options → General → Graphics</p>
+<p>将 Graphics 中 Graphics Device 设置为 Cairo</p>
+<div align="center"> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-07%2019.39.10.webp"
+                      style="zoom : 40%" 
+                > </div>
+
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;showtext&quot;</span><span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>showtext<span class="punctuation">)</span></span><br><span class="line">showtext_auto<span class="punctuation">(</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>绘图</tag>
+        <tag>Cairo</tag>
       </tags>
   </entry>
   <entry>
@@ -437,6 +361,157 @@
         <tag>UNRAID</tag>
         <tag>Docker</tag>
         <tag>代理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WebP格式转换</title>
+    <url>/2024/WebP%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<blockquote>
+<p>WebP‌是一种同时提供有损压缩与无损压缩的图片文件格式，派生自视频编码格式VP8，由Google在购买On2 Technologies后发展出来，并以BSD授权条款发布。WebP格式的目标是减少文件大小，同时保持与JPEG格式相同的图片质量，从而减少图片在网络上的传输时间。</p>
+</blockquote>
+<p>WebP在保证图片质量的前提下大幅压缩图片大小，可大幅加快博客的加载速度，同时减少流量支出</p>
+<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><h3 id="简单"><a href="#简单" class="headerlink" title="简单"></a>简单</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">/opt/homebrew/bin/cwebp <span class="string">&quot;<span class="variable">$f</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;f%.*&#125;</span>.webp&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p><strong>使用该命令转换之后在 iPhone 中拍摄的竖直图会变为横躺样式</strong></p>
+<p>因为 iPhone 拍摄的照片，其实方向就是平躺的，只是其元数据 EXIF 中包含了旋转信息，告诉了打开该图片的查看器应该旋转一个什么角度，但是转换为WebP之后，该EXIF似乎不能被很好支持</p>
+<p>具体原因可参考<a class="link"   href="https://www.ddch.one/2024/05/18/WebpConversionHow/" >iPhone 照片转换 WebP 格式的奥秘 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h3><p>首先需要安装<code>exiftool</code>和<code>imagemagick</code></p>
+<div class="highlight-container" data-rel="Mipsasm"><figure class="iseeu highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>exiftool</span><br><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>imagemagick</span><br></pre></td></tr></table></figure></div>
+
+<p>进阶版命令，大致原理是使用exiftool读取照片EXIF方向信息，使用imagemagick根据EXIF方向信息旋转照片，清除EXIF信息，再进行WebP的转换</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$f</span>&quot;</span></span><br><span class="line">    IMAGE_FILE=<span class="string">&quot;<span class="variable">$f</span>&quot;</span></span><br><span class="line">    TEMP_IMAGE=<span class="string">&quot;.<span class="variable">$&#123;FILENAME&#125;</span>_temp.<span class="variable">$&#123;EXTENSION&#125;</span>&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 检测旋转信息并旋转图片</span></span><br><span class="line">    ORIENTATION=$(/opt/homebrew/bin/exiftool -Orientation -n -S <span class="string">&quot;<span class="variable">$IMAGE_FILE</span>&quot;</span> | <span class="built_in">cut</span> -d: -f2 | <span class="built_in">tr</span> -d <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$ORIENTATION</span>&quot;</span> != <span class="string">&quot;&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">        <span class="comment"># 根据旋转标志旋转图像</span></span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$ORIENTATION</span>&quot;</span> <span class="keyword">in</span></span><br><span class="line">            1)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;0&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">            3)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;180&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">            6)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;270&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">            8)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;90&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">            *)</span><br><span class="line">                ROTATE_DEGREES=<span class="string">&quot;0&quot;</span></span><br><span class="line">                <span class="built_in">echo</span> <span class="string">&quot;No rotation needed or unsupported rotation tag.&quot;</span></span><br><span class="line">                ;;</span><br><span class="line">        <span class="keyword">esac</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 旋转图片</span></span><br><span class="line">        /opt/homebrew/bin/magick <span class="string">&quot;<span class="variable">$IMAGE_FILE</span>&quot;</span> -rotate $((<span class="number">0</span> - <span class="variable">$ROTATE_DEGREES</span>)) <span class="string">&quot;<span class="variable">$TEMP_IMAGE</span>&quot;</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 删除旋转 EXIF 信息</span></span><br><span class="line">    exiftool -Orientation= -overwrite_original <span class="string">&quot;<span class="variable">$TEMP_IMAGE</span>&quot;</span></span><br><span class="line">    /opt/homebrew/bin/cwebp <span class="string">&quot;<span class="variable">$TEMP_IMAGE</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;f%.*&#125;</span>.webp&quot;</span></span><br><span class="line">    <span class="built_in">rm</span> <span class="string">&quot;<span class="variable">$TEMP_IMAGE</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="自动操作"><a href="#自动操作" class="headerlink" title="自动操作"></a>自动操作</h2><p>打开<code>自动操作</code>APP，新建<code>快速操作</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.50.37.webp"
+                      alt="截屏2024-11-15 12.50.37"
+                ></p>
+<p>拖入<code>运行shell脚本</code>，<code>传递输入</code>一定要选<code>作为自变量</code>，其他设置可参考下图自定义</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.52.55.webp"
+                      alt="截屏2024-11-15 12.52.55"
+                ></p>
+<p>写入脚本内容（或使用上方进阶命令）</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$f</span>&quot;</span></span><br><span class="line">	/opt/homebrew/bin/cwebp <span class="string">&quot;<span class="variable">$f</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;f%.*&#125;</span>.webp&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></div>
+
+<p>选中图片后在快速操作菜单即可进行快速WebP转换</p>
+<div align="center"> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.56.05.webp"
+                      style="zoom : 40%" 
+                > </div>
+
+
+<h2 id="Platypus"><a href="#Platypus" class="headerlink" title="Platypus"></a>Platypus</h2><p>使用<a class="link"   href="https://github.com/sveinbjornt/Platypus" >Platypus <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>可以将脚本转换为原生应用，实现将图片拖放后自动转换为WebP。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.33.36.webp"
+                      alt="截屏2024-11-15 12.33.36"
+                ><br>Brew安装Platypus，或者直接下载安装</p>
+<div class="highlight-container" data-rel="Mipsasm"><figure class="iseeu highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>--cask platypus</span><br></pre></td></tr></table></figure></div>
+
+<p>点击<code>+New</code>新建脚本，并写入脚本内容</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">/opt/homebrew/bin/cwebp <span class="string">&quot;<span class="variable">$1</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;1%.*&#125;</span>.webp&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>进阶命令自行测试一下，我使用快速操作很方便，并且可以批量操作，未进一步测试</p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.37.44.webp"
+                      alt="截屏2024-11-15 12.37.44"
+                ><br><code>Interface</code> 选择<code>Droplet</code>，点击<code>Accept dropped items</code>后的<code>setting</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-15%2012.42.41.webp"
+                      alt="截屏2024-11-15 12.42.41"
+                ><br>勾选<code>Accept dropped files</code>，下面的<code>+/-</code>无法点击，分别拖入jpg图片和png图片即可添加两个后缀，其他照片同理</p>
+<p>将图片拖到<code>Generic Application</code>即可添加APP图标，图标可以到<a class="link"   href="https://macosicons.com/#/" >macOSicons <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>下载</p>
+<p><code>Create App</code>即可生成APP</p>
+<p>引文：</p>
+<ul>
+<li><a class="link"   href="https://blog.powersee.top/2023/04/automator-quick-webp/" >自动操作 automator 快速将图片转为 webp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://blog.powersee.top/2023/03/create-mac-app-from-command-line-scripts/" >将 Mac 上的 shell 脚本，变成原生 Mac 图形应用 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://www.ddch.one/2024/05/18/WebpConversionHow/" >iPhone 照片转换 WebP 格式的奥秘 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>WebP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Zotero 在引用中添加 PMID</title>
+    <url>/2024/Zotero%20%E5%9C%A8%E5%BC%95%E7%94%A8%E4%B8%AD%E6%B7%BB%E5%8A%A0%20PMID/</url>
+    <content><![CDATA[<p>外文的引文格式一般都要求 URL、DOI 等，但是最近投的一个杂志要求我在引文中添加PMID，我的方法大致如下</p>
+<h2 id="添加-PMID-字段"><a href="#添加-PMID-字段" class="headerlink" title="添加 PMID 字段"></a>添加 PMID 字段</h2><p>一般由 Pebmed 添加到 Zotero 中的文献都会自带 PMID 字段，但是部分其他地方添加的文献会缺少该内容</p>
+<p>我们通过 <a class="link"   href="https://github.com/retorquere/zotero-pmcid-fetcher" >zotero-pmcid-fetcher <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 插件批量解决</p>
+<ol>
+<li>安装插件</li>
+<li>选中论文的参考文献 → <code>右键</code> → <code>Fetch PMCID keys</code><br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-07%2021.36.35.png"
+                      alt="截屏2024-12-07 21.36.35"
+                ></li>
+<li>可选：自动添加PMID字段<br> <code>设置</code> → <code>高级设置</code> → <code>编辑器</code><br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-07%2021.30.51.png"
+                      alt="截屏2024-12-07 21.30.51"
+                ><br> 输入<code>extensions.zotero.pmcid.auto</code>，添加 <code>extensions.zotero.pmcid.auto</code>字段，类型为<code>boolean</code>，内容为<code>true</code>，这样后续添加的文章即可自动添加 PMID 字段<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-07%2021.33.09.png"
+                      alt="截屏2024-12-07 21.33.09"
+                ></li>
+</ol>
+<h2 id="在引文样式中添加-PMID"><a href="#在引文样式中添加-PMID" class="headerlink" title="在引文样式中添加 PMID"></a>在引文样式中添加 PMID</h2><p><code>设置</code>→<code>引用</code>→选中所选样式→<code>样式编辑器</code><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-07%2021.39.51.png"
+                      alt="截屏2024-12-07 21.39.51"
+                ><br>在适当位置添加内容→<code>另存为</code>→重新导入样式文件</p>
+<div class="highlight-container" data-rel="Routeros"><figure class="iseeu highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;text <span class="attribute">variable</span>=<span class="string">&quot;PMID&quot;</span> <span class="attribute">prefix</span>=<span class="string">&quot;PMID:&quot;</span>/&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-07%2021.42.32.png"
+                      alt="截屏2024-12-07 21.42.32"
+                ><br>这样设置后，引文文献即可带PMID字段</p>
+<p>引文：<a class="link"   href="https://forums.zotero.org/discussion/82239/adding-pmid-and-pmcid" >Adding PMID and PMCID 添加 PMID 和 PMCID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>Zotero</tag>
+        <tag>Pubmed</tag>
+        <tag>PMID</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中文催稿信</title>
+    <url>/2024/%E4%B8%AD%E6%96%87%E5%82%AC%E7%A8%BF%E4%BF%A1/</url>
+    <content><![CDATA[<p>尊敬的【xxx杂志】编辑：<br>    您好！<br>    我于【xx年xx月xx日】向贵刊来稿《xxxxx》一份（稿件号：xxx），稿件已进入专家外审3月余，状态未更新，来信主要想咨询稿件是否有进一步修改意见，以便尽早按意见调整修改稿件。<br>    感谢您在百忙中抽空查看此信，我非常期待您的回复，并衷心希望论文能顺利在贵刊发表。祝您工作顺利，万事顺意!<br>    此致，<br>敬礼！<br>xxxx医院 xxx（右对齐）<br>xx年xx月xx日（右对齐）</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>投稿</tag>
       </tags>
   </entry>
   <entry>
@@ -503,47 +578,6 @@
       </tags>
   </entry>
   <entry>
-    <title>青龙面板使用浏览器抓取京东 Cookie</title>
-    <url>/2024/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E4%BA%AC%E4%B8%9CCookie/</url>
-    <content><![CDATA[<p>Chrome  隐私模式 打开<a class="link"   href="https://m.jd.com/]()" >京东 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>按F12键打开开发者工具,点击Network</p>
-<p>登陆</p>
-<p>复制cookie，我们只需要 <code>pt_pin=xxxx;pt_key=xxxx;</code>这一段，两个分号必不可少</p>
-<p>存储于 <code>JD_COOKIE</code>变量中，多个账号以相同名称再建变量即可</p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>青龙面板</tag>
-        <tag>京东</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>RStudio 绘图中文字符乱码问题</title>
-    <url>/2024/R%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;Cairo&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<p>打开R studio → Tools → Global Options → General → Graphics</p>
-<p>将 Graphics 中 Graphics Device 设置为 Cairo</p>
-<div align="center"> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-07%2019.39.10.webp"
-                      style="zoom : 40%" 
-                > </div>
-
-<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;showtext&quot;</span><span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>showtext<span class="punctuation">)</span></span><br><span class="line">showtext_auto<span class="punctuation">(</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>绘图</tag>
-        <tag>Cairo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iOS 无法开启“家人共享”</title>
     <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
     <content><![CDATA[<div align="center"> <img  
@@ -596,6 +630,23 @@
       <tags>
         <tag>MacOS</tag>
         <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>青龙面板使用浏览器抓取京东 Cookie</title>
+    <url>/2024/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E4%BA%AC%E4%B8%9CCookie/</url>
+    <content><![CDATA[<p>Chrome  隐私模式 打开<a class="link"   href="https://m.jd.com/]()" >京东 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>按F12键打开开发者工具,点击Network</p>
+<p>登陆</p>
+<p>复制cookie，我们只需要 <code>pt_pin=xxxx;pt_key=xxxx;</code>这一段，两个分号必不可少</p>
+<p>存储于 <code>JD_COOKIE</code>变量中，多个账号以相同名称再建变量即可</p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>青龙面板</tag>
+        <tag>京东</tag>
       </tags>
   </entry>
 </search>
