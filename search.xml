@@ -55,17 +55,25 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 删除子目录下特定后缀文件</title>
-    <url>/2024/Linux%20%E5%88%A0%E9%99%A4%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%89%B9%E5%AE%9A%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">find /path/to/parent_directory -<span class="built_in">type</span> f -name <span class="string">&quot;*.lrc&quot;</span> -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br><span class="line">- <span class="built_in">type</span> f <span class="comment"># 指定文件类型为普通文件， f（普通文件）、d（目录）、l（符号链接）</span></span><br><span class="line">- name <span class="comment"># 按文件名查找，支持使用通配符 * 和 ?</span></span><br><span class="line">-<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \; <span class="comment">#-exec 选项允许你执行一个命令，&#123;&#125; 将会被匹配到的文件名替代，\; 表示命令结束</span></span><br></pre></td></tr></table></figure></div>
+    <title>Hexo发布之后GitHub Pages自定义域名失效</title>
+    <url>/2024/Hexo%E5%8F%91%E5%B8%83%E4%B9%8B%E5%90%8EGitHub%20Pages%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%A4%B1%E6%95%88/</url>
+    <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>每次<code>hexo deploy</code>之后，访问自己的GitHub Pages自定义域名会404，重新查看仓库的设置发现Custom domain项变成空白</p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p><code>source</code> 目录下新建一个<code>CNAME</code>文件(没有后缀)，然后在这个文件中填入自己的域名，重新发布</p>
+<div align="center"> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-14%2021.50.20.webp"
+                      style="zoom : 60%" 
+                > </div>
 
-<p>🔗：<a class="link"   href="https://www.runoob.com/linux/linux-comm-find.html" >find命令详细说明 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
       <categories>
         <category>计算机</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub Pages</tag>
+        <tag>域名</tag>
       </tags>
   </entry>
   <entry>
@@ -93,28 +101,6 @@
       <tags>
         <tag>Mac</tag>
         <tag>LaunchPad</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo发布之后GitHub Pages自定义域名失效</title>
-    <url>/2024/Hexo%E5%8F%91%E5%B8%83%E4%B9%8B%E5%90%8EGitHub%20Pages%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%A4%B1%E6%95%88/</url>
-    <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>每次<code>hexo deploy</code>之后，访问自己的GitHub Pages自定义域名会404，重新查看仓库的设置发现Custom domain项变成空白</p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p><code>source</code> 目录下新建一个<code>CNAME</code>文件(没有后缀)，然后在这个文件中填入自己的域名，重新发布</p>
-<div align="center"> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-14%2021.50.20.webp"
-                      style="zoom : 60%" 
-                > </div>
-
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>GitHub Pages</tag>
-        <tag>域名</tag>
       </tags>
   </entry>
   <entry>
@@ -147,6 +133,20 @@
       <tags>
         <tag>MacOS</tag>
         <tag>鼠标</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 删除子目录下特定后缀文件</title>
+    <url>/2024/Linux%20%E5%88%A0%E9%99%A4%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%89%B9%E5%AE%9A%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">find /path/to/parent_directory -<span class="built_in">type</span> f -name <span class="string">&quot;*.lrc&quot;</span> -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br><span class="line">- <span class="built_in">type</span> f <span class="comment"># 指定文件类型为普通文件， f（普通文件）、d（目录）、l（符号链接）</span></span><br><span class="line">- name <span class="comment"># 按文件名查找，支持使用通配符 * 和 ?</span></span><br><span class="line">-<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \; <span class="comment">#-exec 选项允许你执行一个命令，&#123;&#125; 将会被匹配到的文件名替代，\; 表示命令结束</span></span><br></pre></td></tr></table></figure></div>
+
+<p>🔗：<a class="link"   href="https://www.runoob.com/linux/linux-comm-find.html" >find命令详细说明 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -336,66 +336,6 @@
       </tags>
   </entry>
   <entry>
-    <title>R语言常用代码</title>
-    <url>/2024/R%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/</url>
-    <content><![CDATA[<h2 id="基本处理"><a href="#基本处理" class="headerlink" title="基本处理"></a>基本处理</h2><h3 id="数据清理"><a href="#数据清理" class="headerlink" title="数据清理"></a>数据清理</h3><h4 id="删除包含空值的个案"><a href="#删除包含空值的个案" class="headerlink" title="删除包含空值的个案"></a>删除包含空值的个案</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_cache <span class="operator">&lt;-</span> database_group<span class="punctuation">[</span>complete.cases<span class="punctuation">(</span>database_group<span class="operator">$</span>group<span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="筛选数据"><a href="#筛选数据" class="headerlink" title="筛选数据"></a>筛选数据</h3><h4 id="Subset"><a href="#Subset" class="headerlink" title="Subset"></a>Subset</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">subset_df <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>df<span class="punctuation">,</span> tl5 <span class="operator">+</span> tl6 <span class="operator">+</span> tl7 <span class="operator">+</span> tl8 <span class="operator">==</span> <span class="number">3</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<p>可以结合逻辑运算符来指定多个条件，如：<code>&amp;</code>（与）、<code>|</code>（或）、<code>!</code>（非）</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">subset_df <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>df<span class="punctuation">,</span> tl5 <span class="operator">+</span> tl6 <span class="operator">+</span> tl7 <span class="operator">+</span> tl8 <span class="operator">==</span> <span class="number">3</span> <span class="operator">&amp;</span> tl1 <span class="operator">+</span> tl2 <span class="operator">+</span> tl3 <span class="operator">+</span> tl4 <span class="operator">==</span> <span class="number">0</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h4 id="逻辑条件"><a href="#逻辑条件" class="headerlink" title="逻辑条件"></a>逻辑条件</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">filtered_df <span class="operator">&lt;-</span> df<span class="punctuation">[</span>df<span class="operator">$</span>tl5 <span class="operator">+</span> df<span class="operator">$</span>tl6 <span class="operator">+</span> df<span class="operator">$</span>tl7 <span class="operator">+</span> df<span class="operator">$</span>tl8 <span class="operator">==</span> <span class="number">3</span><span class="punctuation">,</span> <span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
-
-<p>将<code>group</code>列数值为2&#x2F;3的个案生成新数据框<code>database_G23</code></p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_G23 <span class="operator">&lt;-</span> database_5mm<span class="punctuation">[</span>database_5mm<span class="operator">$</span>group <span class="operator">%in%</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">2</span><span class="punctuation">,</span><span class="number">3</span><span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data<span class="operator">$</span>group<span class="punctuation">[</span>data<span class="operator">$</span>seg4 <span class="operator">+</span> data<span class="operator">$</span>seg5 <span class="operator">==</span> <span class="number">1</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="number">1</span></span><br><span class="line">data<span class="operator">$</span>group<span class="punctuation">[</span>data<span class="operator">$</span>seg4 <span class="operator">+</span> data<span class="operator">$</span>seg5 <span class="operator">==</span> <span class="number">2</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="number">2</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h3><p>根据键值合并两张表&#x3D;VLOOKUP</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line"><span class="comment">#vlookup </span></span><br><span class="line">merge<span class="punctuation">(</span>tableA<span class="punctuation">,</span>tableB<span class="punctuation">,</span>by<span class="operator">=</span><span class="string">&quot;idno&quot;</span><span class="punctuation">)</span></span><br><span class="line">merge<span class="punctuation">(</span>tableA<span class="punctuation">,</span>tableB<span class="punctuation">,</span>by<span class="operator">=</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;id&quot;</span><span class="punctuation">,</span> <span class="string">&quot;sex&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="Apply"><a href="#Apply" class="headerlink" title="Apply"></a>Apply</h3><p>apply函数是最常用的代替for循环的函数。apply函数可以对矩阵、数据框、数组(二维、多维)，按行或列进行循环计算，对子元素进行迭代，并把子元素以参数传递的形式给自定义的FUN函数中，并以返回计算结果。</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">apply<span class="punctuation">(</span>X<span class="punctuation">,</span> MARGIN<span class="punctuation">,</span> FUN<span class="punctuation">,</span> ...<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># X:数组、矩阵、数据框</span></span><br><span class="line"><span class="comment"># MARGIN: 按行计算或按按列计算，1表示按行，2表示按列</span></span><br><span class="line"><span class="comment"># FUN: 自定义的调用函数</span></span><br></pre></td></tr></table></figure></div>
-
-<p>sltl是肿瘤的长径，sltw是肿瘤的宽径，我想要求肿瘤的最长径，并且存储在totaltd列中</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_outcome<span class="punctuation">[</span>totaltd<span class="punctuation">]</span><span class="operator">&lt;-</span> apply<span class="punctuation">(</span>database_outcome<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;sltl&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;sltw&#x27;</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation">,</span> <span class="number">1</span><span class="punctuation">,</span> <span class="built_in">max</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="View"><a href="#View" class="headerlink" title="View"></a>View</h3><p>查看数据框特定的某几列（尤其是在数据框列数特别多的时候蛮有用）</p>
- <div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">View<span class="punctuation">(</span>database_outcome<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;sltl&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;sltw&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;totaltd&#x27;</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="Ifelse"><a href="#Ifelse" class="headerlink" title="Ifelse"></a>Ifelse</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span><span class="punctuation">(</span>con<span class="punctuation">,</span> statement1<span class="punctuation">,</span> statement2<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># con是逻辑条件，当逻辑条件的值为TRUE时，则输出statement1的值，否则输出statement2的值。</span></span><br><span class="line"><span class="comment"># 函数可以多层嵌套</span></span><br></pre></td></tr></table></figure></div>
-
-<p>我要根据<code>srmar</code>的值将数据分为3组，<code>0.5&lt;srmar&lt;=1</code>为组1，<code>srmar&gt;1</code>为组2，<code>0&lt;srmar≤0.5</code>为组3（不包含srmar为0的值），如果都不满足则为<code>NA</code>（空值）</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_5mm<span class="operator">$</span>group <span class="operator">&lt;-</span> ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar <span class="operator">&gt;</span> <span class="number">0.5</span> <span class="operator">&amp;</span> database_5mm<span class="operator">$</span>srmar <span class="operator">&lt;=</span> <span class="number">1</span><span class="punctuation">,</span><span class="number">1</span><span class="punctuation">,</span>ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar<span class="operator">&gt;</span><span class="number">1</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">,</span>ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar<span class="operator">&gt;</span><span class="number">0</span> <span class="operator">&amp;</span> database_5mm<span class="operator">$</span>srmar <span class="operator">&lt;=</span> <span class="number">0.5</span> <span class="punctuation">,</span><span class="number">3</span><span class="punctuation">,</span><span class="literal">NA</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="分类变量"><a href="#分类变量" class="headerlink" title="分类变量"></a>分类变量</h3><p>批量设置分类变量</p>
-<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">factor_list <span class="operator">&lt;-</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;A&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;B&#x27;</span><span class="punctuation">)</span></span><br><span class="line">    <span class="keyword">for</span><span class="punctuation">(</span>var <span class="keyword">in</span> factor_list<span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">        data_total_type<span class="punctuation">[[</span>var<span class="punctuation">]</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> as.factor<span class="punctuation">(</span>data_total_type<span class="punctuation">[[</span>var<span class="punctuation">]</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
-
-<h2 id="基线水平"><a href="#基线水平" class="headerlink" title="基线水平"></a>基线水平</h2><h2 id="生存分析"><a href="#生存分析" class="headerlink" title="生存分析"></a>生存分析</h2><h3 id="OS"><a href="#OS" class="headerlink" title="OS"></a>OS</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">ggsurvplot<span class="punctuation">(</span></span><br><span class="line">    survfit<span class="punctuation">(</span>Surv<span class="punctuation">(</span>OS<span class="punctuation">,</span>StatusforOS<span class="punctuation">)</span><span class="operator">~</span>group<span class="punctuation">,</span>data<span class="operator">=</span>df<span class="punctuation">)</span><span class="punctuation">,</span>  </span><br><span class="line">    <span class="comment"># OS 生存时间</span></span><br><span class="line">    <span class="comment"># StatusforOS 生存状态，1表示事件发生，即死亡</span></span><br><span class="line">    <span class="comment"># group 为分组依据</span></span><br><span class="line">    <span class="comment"># data为数据框</span></span><br><span class="line">    legend.title <span class="operator">=</span> <span class="string">&quot;Group&quot;</span><span class="punctuation">,</span> <span class="comment"># 图例的标题</span></span><br><span class="line">    legend.labs <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;RH&quot;</span><span class="punctuation">,</span> <span class="string">&quot;RS&quot;</span><span class="punctuation">)</span><span class="punctuation">,</span> <span class="comment"># 图例显示的名称</span></span><br><span class="line">    risk.table <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="comment"># 是否显示risk table</span></span><br><span class="line">    pval <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="comment"># 是否显示P value </span></span><br><span class="line">    conf.int <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span>         </span><br><span class="line">    xlab <span class="operator">=</span> <span class="string">&quot;Overall Survival (months)&quot;</span><span class="punctuation">,</span>   <span class="comment"># 横坐标标题</span></span><br><span class="line">    break.time.by <span class="operator">=</span> <span class="number">12</span><span class="punctuation">,</span>     <span class="comment"># 横坐标刻度</span></span><br><span class="line">    ggtheme <span class="operator">=</span> theme_light<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">,</span> </span><br><span class="line">    risk.table.y.text.col <span class="operator">=</span> <span class="built_in">T</span><span class="punctuation">,</span> <span class="comment"># risk table文字注释颜色</span></span><br><span class="line">    risk.table.y.text <span class="operator">=</span> <span class="literal">FALSE</span><span class="punctuation">,</span> <span class="comment"># risk table显示条形而不是文字</span></span><br><span class="line">    <span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
-<h2 id="倾向性评分匹配（PSM）"><a href="#倾向性评分匹配（PSM）" class="headerlink" title="倾向性评分匹配（PSM）"></a>倾向性评分匹配（PSM）</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_psm <span class="operator">&lt;-</span> matchit<span class="punctuation">(</span>group<span class="operator">~</span>UICC7<span class="punctuation">,</span>data<span class="operator">=</span>data_cache1<span class="punctuation">,</span>method <span class="operator">=</span> <span class="string">&quot;nearest&quot;</span><span class="punctuation">,</span>ratio<span class="operator">=</span><span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"><span class="comment"># caliper = 0.2, 添加卡钳值</span></span><br><span class="line">summary<span class="punctuation">(</span>data_psm<span class="punctuation">)</span></span><br><span class="line">data_postpsm <span class="operator">&lt;-</span> match.data<span class="punctuation">(</span>data_psm<span class="punctuation">)</span> </span><br><span class="line"><span class="comment"># 将匹配后的数据集存储在data_psm中</span></span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>UNRAID 为 Docker 设置全局代理</title>
-    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
-    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
-<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">HTTP_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br><span class="line"><span class="attr">HTTPS_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>UNRAID</tag>
-        <tag>Docker</tag>
-        <tag>代理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>WebP格式转换</title>
     <url>/2024/WebP%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</url>
     <content><![CDATA[<blockquote>
@@ -535,6 +475,20 @@
       </tags>
   </entry>
   <entry>
+    <title>UNRAID 为 Docker 设置全局代理</title>
+    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
+<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">HTTP_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br><span class="line"><span class="attr">HTTPS_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>UNRAID</tag>
+        <tag>Docker</tag>
+        <tag>代理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>中文催稿信</title>
     <url>/2024/%E4%B8%AD%E6%96%87%E5%82%AC%E7%A8%BF%E4%BF%A1/</url>
     <content><![CDATA[<p>尊敬的【xxx杂志】编辑：<br>    您好！<br>    我于【xx年xx月xx日】向贵刊来稿《xxxxx》一份（稿件号：xxx），稿件已进入专家外审3月余，状态未更新，来信主要想咨询稿件是否有进一步修改意见，以便尽早按意见调整修改稿件。<br>    感谢您在百忙中抽空查看此信，我非常期待您的回复，并衷心希望论文能顺利在贵刊发表。祝您工作顺利，万事顺意!<br>    此致，<br>敬礼！<br>xxxx医院 xxx（右对齐）<br>xx年xx月xx日（右对齐）</p>
@@ -544,6 +498,52 @@
       </categories>
       <tags>
         <tag>投稿</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R语言常用代码</title>
+    <url>/2024/R%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/</url>
+    <content><![CDATA[<h2 id="基本处理"><a href="#基本处理" class="headerlink" title="基本处理"></a>基本处理</h2><h3 id="数据清理"><a href="#数据清理" class="headerlink" title="数据清理"></a>数据清理</h3><h4 id="删除包含空值的个案"><a href="#删除包含空值的个案" class="headerlink" title="删除包含空值的个案"></a>删除包含空值的个案</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_cache <span class="operator">&lt;-</span> database_group<span class="punctuation">[</span>complete.cases<span class="punctuation">(</span>database_group<span class="operator">$</span>group<span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="筛选数据"><a href="#筛选数据" class="headerlink" title="筛选数据"></a>筛选数据</h3><h4 id="Subset"><a href="#Subset" class="headerlink" title="Subset"></a>Subset</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">subset_df <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>df<span class="punctuation">,</span> tl5 <span class="operator">+</span> tl6 <span class="operator">+</span> tl7 <span class="operator">+</span> tl8 <span class="operator">==</span> <span class="number">3</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<p>可以结合逻辑运算符来指定多个条件，如：<code>&amp;</code>（与）、<code>|</code>（或）、<code>!</code>（非）</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">subset_df <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>df<span class="punctuation">,</span> tl5 <span class="operator">+</span> tl6 <span class="operator">+</span> tl7 <span class="operator">+</span> tl8 <span class="operator">==</span> <span class="number">3</span> <span class="operator">&amp;</span> tl1 <span class="operator">+</span> tl2 <span class="operator">+</span> tl3 <span class="operator">+</span> tl4 <span class="operator">==</span> <span class="number">0</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="逻辑条件"><a href="#逻辑条件" class="headerlink" title="逻辑条件"></a>逻辑条件</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">filtered_df <span class="operator">&lt;-</span> df<span class="punctuation">[</span>df<span class="operator">$</span>tl5 <span class="operator">+</span> df<span class="operator">$</span>tl6 <span class="operator">+</span> df<span class="operator">$</span>tl7 <span class="operator">+</span> df<span class="operator">$</span>tl8 <span class="operator">==</span> <span class="number">3</span><span class="punctuation">,</span> <span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
+
+<p>将<code>group</code>列数值为2&#x2F;3的个案生成新数据框<code>database_G23</code></p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_G23 <span class="operator">&lt;-</span> database_5mm<span class="punctuation">[</span>database_5mm<span class="operator">$</span>group <span class="operator">%in%</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">2</span><span class="punctuation">,</span><span class="number">3</span><span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data<span class="operator">$</span>group<span class="punctuation">[</span>data<span class="operator">$</span>seg4 <span class="operator">+</span> data<span class="operator">$</span>seg5 <span class="operator">==</span> <span class="number">1</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="number">1</span></span><br><span class="line">data<span class="operator">$</span>group<span class="punctuation">[</span>data<span class="operator">$</span>seg4 <span class="operator">+</span> data<span class="operator">$</span>seg5 <span class="operator">==</span> <span class="number">2</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="number">2</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h3><p>根据键值合并两张表&#x3D;VLOOKUP</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line"><span class="comment">#vlookup </span></span><br><span class="line">merge<span class="punctuation">(</span>tableA<span class="punctuation">,</span>tableB<span class="punctuation">,</span>by<span class="operator">=</span><span class="string">&quot;idno&quot;</span><span class="punctuation">)</span></span><br><span class="line">merge<span class="punctuation">(</span>tableA<span class="punctuation">,</span>tableB<span class="punctuation">,</span>by<span class="operator">=</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;id&quot;</span><span class="punctuation">,</span> <span class="string">&quot;sex&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Apply"><a href="#Apply" class="headerlink" title="Apply"></a>Apply</h3><p>apply函数是最常用的代替for循环的函数。apply函数可以对矩阵、数据框、数组(二维、多维)，按行或列进行循环计算，对子元素进行迭代，并把子元素以参数传递的形式给自定义的FUN函数中，并以返回计算结果。</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">apply<span class="punctuation">(</span>X<span class="punctuation">,</span> MARGIN<span class="punctuation">,</span> FUN<span class="punctuation">,</span> ...<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># X:数组、矩阵、数据框</span></span><br><span class="line"><span class="comment"># MARGIN: 按行计算或按按列计算，1表示按行，2表示按列</span></span><br><span class="line"><span class="comment"># FUN: 自定义的调用函数</span></span><br></pre></td></tr></table></figure></div>
+
+<p>sltl是肿瘤的长径，sltw是肿瘤的宽径，我想要求肿瘤的最长径，并且存储在totaltd列中</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_outcome<span class="punctuation">[</span>totaltd<span class="punctuation">]</span><span class="operator">&lt;-</span> apply<span class="punctuation">(</span>database_outcome<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;sltl&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;sltw&#x27;</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation">,</span> <span class="number">1</span><span class="punctuation">,</span> <span class="built_in">max</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="View"><a href="#View" class="headerlink" title="View"></a>View</h3><p>查看数据框特定的某几列（尤其是在数据框列数特别多的时候蛮有用）</p>
+ <div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">View<span class="punctuation">(</span>database_outcome<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;sltl&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;sltw&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;totaltd&#x27;</span><span class="punctuation">)</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Ifelse"><a href="#Ifelse" class="headerlink" title="Ifelse"></a>Ifelse</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span><span class="punctuation">(</span>con<span class="punctuation">,</span> statement1<span class="punctuation">,</span> statement2<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># con是逻辑条件，当逻辑条件的值为TRUE时，则输出statement1的值，否则输出statement2的值。</span></span><br><span class="line"><span class="comment"># 函数可以多层嵌套</span></span><br></pre></td></tr></table></figure></div>
+
+<p>我要根据<code>srmar</code>的值将数据分为3组，<code>0.5&lt;srmar&lt;=1</code>为组1，<code>srmar&gt;1</code>为组2，<code>0&lt;srmar≤0.5</code>为组3（不包含srmar为0的值），如果都不满足则为<code>NA</code>（空值）</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">database_5mm<span class="operator">$</span>group <span class="operator">&lt;-</span> ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar <span class="operator">&gt;</span> <span class="number">0.5</span> <span class="operator">&amp;</span> database_5mm<span class="operator">$</span>srmar <span class="operator">&lt;=</span> <span class="number">1</span><span class="punctuation">,</span><span class="number">1</span><span class="punctuation">,</span>ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar<span class="operator">&gt;</span><span class="number">1</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">,</span>ifelse<span class="punctuation">(</span>database_5mm<span class="operator">$</span>srmar<span class="operator">&gt;</span><span class="number">0</span> <span class="operator">&amp;</span> database_5mm<span class="operator">$</span>srmar <span class="operator">&lt;=</span> <span class="number">0.5</span> <span class="punctuation">,</span><span class="number">3</span><span class="punctuation">,</span><span class="literal">NA</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="分类变量"><a href="#分类变量" class="headerlink" title="分类变量"></a>分类变量</h3><p>批量设置分类变量</p>
+<div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">factor_list <span class="operator">&lt;-</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&#x27;A&#x27;</span><span class="punctuation">,</span><span class="string">&#x27;B&#x27;</span><span class="punctuation">)</span></span><br><span class="line">    <span class="keyword">for</span><span class="punctuation">(</span>var <span class="keyword">in</span> factor_list<span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">        data_total_type<span class="punctuation">[[</span>var<span class="punctuation">]</span><span class="punctuation">]</span> <span class="operator">&lt;-</span> as.factor<span class="punctuation">(</span>data_total_type<span class="punctuation">[[</span>var<span class="punctuation">]</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="基线水平"><a href="#基线水平" class="headerlink" title="基线水平"></a>基线水平</h2><h2 id="生存分析"><a href="#生存分析" class="headerlink" title="生存分析"></a>生存分析</h2><h3 id="OS"><a href="#OS" class="headerlink" title="OS"></a>OS</h3><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">ggsurvplot<span class="punctuation">(</span></span><br><span class="line">    survfit<span class="punctuation">(</span>Surv<span class="punctuation">(</span>OS<span class="punctuation">,</span>StatusforOS<span class="punctuation">)</span><span class="operator">~</span>group<span class="punctuation">,</span>data<span class="operator">=</span>df<span class="punctuation">)</span><span class="punctuation">,</span>  </span><br><span class="line">    <span class="comment"># OS 生存时间</span></span><br><span class="line">    <span class="comment"># StatusforOS 生存状态，1表示事件发生，即死亡</span></span><br><span class="line">    <span class="comment"># group 为分组依据</span></span><br><span class="line">    <span class="comment"># data为数据框</span></span><br><span class="line">    legend.title <span class="operator">=</span> <span class="string">&quot;Group&quot;</span><span class="punctuation">,</span> <span class="comment"># 图例的标题</span></span><br><span class="line">    legend.labs <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;RH&quot;</span><span class="punctuation">,</span> <span class="string">&quot;RS&quot;</span><span class="punctuation">)</span><span class="punctuation">,</span> <span class="comment"># 图例显示的名称</span></span><br><span class="line">    risk.table <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="comment"># 是否显示risk table</span></span><br><span class="line">    pval <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="comment"># 是否显示P value </span></span><br><span class="line">    conf.int <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">,</span>         </span><br><span class="line">    xlab <span class="operator">=</span> <span class="string">&quot;Overall Survival (months)&quot;</span><span class="punctuation">,</span>   <span class="comment"># 横坐标标题</span></span><br><span class="line">    break.time.by <span class="operator">=</span> <span class="number">12</span><span class="punctuation">,</span>     <span class="comment"># 横坐标刻度</span></span><br><span class="line">    ggtheme <span class="operator">=</span> theme_light<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">,</span> </span><br><span class="line">    risk.table.y.text.col <span class="operator">=</span> <span class="built_in">T</span><span class="punctuation">,</span> <span class="comment"># risk table文字注释颜色</span></span><br><span class="line">    risk.table.y.text <span class="operator">=</span> <span class="literal">FALSE</span><span class="punctuation">,</span> <span class="comment"># risk table显示条形而不是文字</span></span><br><span class="line">    <span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
+<h2 id="倾向性评分匹配（PSM）"><a href="#倾向性评分匹配（PSM）" class="headerlink" title="倾向性评分匹配（PSM）"></a>倾向性评分匹配（PSM）</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_psm <span class="operator">&lt;-</span> matchit<span class="punctuation">(</span>group<span class="operator">~</span>UICC7<span class="punctuation">,</span>data<span class="operator">=</span>data_cache1<span class="punctuation">,</span>method <span class="operator">=</span> <span class="string">&quot;nearest&quot;</span><span class="punctuation">,</span>ratio<span class="operator">=</span><span class="number">1</span><span class="punctuation">)</span></span><br><span class="line"><span class="comment"># caliper = 0.2, 添加卡钳值</span></span><br><span class="line">summary<span class="punctuation">(</span>data_psm<span class="punctuation">)</span></span><br><span class="line">data_postpsm <span class="operator">&lt;-</span> match.data<span class="punctuation">(</span>data_psm<span class="punctuation">)</span> </span><br><span class="line"><span class="comment"># 将匹配后的数据集存储在data_psm中</span></span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
       </tags>
   </entry>
   <entry>
@@ -610,6 +610,61 @@
       </tags>
   </entry>
   <entry>
+    <title>iOS 无法开启“家人共享”</title>
+    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
+    <content><![CDATA[<div align="center"> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/IMG_5988.webp"
+                      style="zoom : 20%" 
+                > </div>
+
+
+<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>找到icloud设置</p>
+<p>找到管理你的icloud</p>
+<p>找到家人共享</p>
+<p>关掉</p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>iCloud</tag>
+        <tag>家人共享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更改 Mac 文件的默认打开方式</title>
+    <url>/2024/%E6%9B%B4%E6%94%B9%20Mac%20%E6%96%87%E4%BB%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="更改某一个文件的默认打开方式"><a href="#更改某一个文件的默认打开方式" class="headerlink" title="更改某一个文件的默认打开方式"></a>更改某一个文件的默认打开方式</h2><p>选中文件后<code>右键</code> → 按下<code>Option 键</code> → <code>始终以此方式打开</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-19%2019.33.08.webp"
+                      alt="截屏2024-11-19 19.33.08"
+                ></p>
+<p>&lt; 该方法仅适用于所选择的这一个文件，并不适用于其他文件（包括同一类型的文件），于是才会有第二种方法</p>
+<h2 id="更改同类型文件的默认打开方式"><a href="#更改同类型文件的默认打开方式" class="headerlink" title="更改同类型文件的默认打开方式"></a>更改同类型文件的默认打开方式</h2><p>选中文件后<code>右键</code> →<code>显示简介</code>→<code>打开方式</code>→选择需要的应用后点击<code>全部更改</code></p>
+<div align="center"> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-19%2019.37.59.webp"
+                      style="zoom : 40%" 
+                > </div>
+
+<p>引文：<br><a class="link"   href="https://sspai.com/post/28394" >基础教程：如何更改 Mac 文件的默认打开方式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>投稿系统导航</title>
     <url>/2024/%E6%8A%95%E7%A8%BF%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%88%AA/</url>
     <content><![CDATA[<h2 id="中文"><a href="#中文" class="headerlink" title="中文"></a>中文</h2><table>
@@ -669,61 +724,6 @@
       <tags>
         <tag>投稿系统</tag>
         <tag>导航</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iOS 无法开启“家人共享”</title>
-    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
-    <content><![CDATA[<div align="center"> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/IMG_5988.webp"
-                      style="zoom : 20%" 
-                > </div>
-
-
-<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>找到icloud设置</p>
-<p>找到管理你的icloud</p>
-<p>找到家人共享</p>
-<p>关掉</p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>iCloud</tag>
-        <tag>家人共享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更改 Mac 文件的默认打开方式</title>
-    <url>/2024/%E6%9B%B4%E6%94%B9%20Mac%20%E6%96%87%E4%BB%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="更改某一个文件的默认打开方式"><a href="#更改某一个文件的默认打开方式" class="headerlink" title="更改某一个文件的默认打开方式"></a>更改某一个文件的默认打开方式</h2><p>选中文件后<code>右键</code> → 按下<code>Option 键</code> → <code>始终以此方式打开</code></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-19%2019.33.08.webp"
-                      alt="截屏2024-11-19 19.33.08"
-                ></p>
-<p>&lt; 该方法仅适用于所选择的这一个文件，并不适用于其他文件（包括同一类型的文件），于是才会有第二种方法</p>
-<h2 id="更改同类型文件的默认打开方式"><a href="#更改同类型文件的默认打开方式" class="headerlink" title="更改同类型文件的默认打开方式"></a>更改同类型文件的默认打开方式</h2><p>选中文件后<code>右键</code> →<code>显示简介</code>→<code>打开方式</code>→选择需要的应用后点击<code>全部更改</code></p>
-<div align="center"> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-19%2019.37.59.webp"
-                      style="zoom : 40%" 
-                > </div>
-
-<p>引文：<br><a class="link"   href="https://sspai.com/post/28394" >基础教程：如何更改 Mac 文件的默认打开方式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-        <tag>文件</tag>
       </tags>
   </entry>
   <entry>
