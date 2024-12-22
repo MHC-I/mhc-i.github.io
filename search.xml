@@ -15,23 +15,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GPT 中译英指令</title>
-    <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
-<blockquote>
-<p>我想让你充当一名科学的英汉翻译，我会向你提供一些英文段落，你的任务是准确、学术性地将这些段落翻译成中文。翻译后不要重复原文提供的段落。你应该使用人工智能工具，如自然语言处理，以及有关有效写作技巧的修辞知识和经验来回答。以下是我提供的段落，请告诉我是用什么语言写的，然后翻译：</p>
-</blockquote>
-<p>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；3. 确保语言的逻辑关系准确，条理清晰；4. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；5. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>GPT</tag>
-        <tag>翻译</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Excel DATEDIF 函数 计算两个日期差值</title>
     <url>/2024/Excel%20DATEDIF%E5%87%BD%E6%95%B0%20%E8%AE%A1%E7%AE%97%E4%B8%A4%E4%B8%AA%E6%97%A5%E6%9C%9F%E5%B7%AE%E5%80%BC/</url>
     <content><![CDATA[<div class="highlight-container" data-rel="Stylus"><figure class="iseeu highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">DATEDIF</span><span class="params">(start_date, end_date, unit)</span></span></span><br></pre></td></tr></table></figure></div>
@@ -52,6 +35,23 @@
         <tag>Excel</tag>
         <tag>随访</tag>
         <tag>日期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GPT 中译英指令</title>
+    <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
+<blockquote>
+<p>我想让你充当一名科学的英汉翻译，我会向你提供一些英文段落，你的任务是准确、学术性地将这些段落翻译成中文。翻译后不要重复原文提供的段落。你应该使用人工智能工具，如自然语言处理，以及有关有效写作技巧的修辞知识和经验来回答。以下是我提供的段落，请告诉我是用什么语言写的，然后翻译：</p>
+</blockquote>
+<p>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；3. 确保语言的逻辑关系准确，条理清晰；4. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；5. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>GPT</tag>
+        <tag>翻译</tag>
       </tags>
   </entry>
   <entry>
@@ -191,18 +191,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Restic 文件备份</title>
-    <url>/2024/Restic%20%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仓库密码</span></span><br><span class="line"><span class="built_in">export</span> RESTIC_PASSWORD=</span><br><span class="line"><span class="comment"># appdata</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/cache/appdata</span><br><span class="line"><span class="comment"># music</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/disk1/PTdown/bz/music</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>Restic</tag>
-        <tag>备份</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Redefine 主题优化--细节优化</title>
     <url>/2024/Redefine%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[<h2 id="移动端上方紧贴header修复"><a href="#移动端上方紧贴header修复" class="headerlink" title="移动端上方紧贴header修复"></a>移动端上方紧贴header修复</h2><h3 id="Home页"><a href="#Home页" class="headerlink" title="Home页"></a>Home页</h3><p>文件路径：<code>/themes/redefine/source/css/layout/home-content.styl</code></p>
@@ -336,6 +324,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Restic 文件备份</title>
+    <url>/2024/Restic%20%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仓库密码</span></span><br><span class="line"><span class="built_in">export</span> RESTIC_PASSWORD=</span><br><span class="line"><span class="comment"># appdata</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/cache/appdata</span><br><span class="line"><span class="comment"># music</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/disk1/PTdown/bz/music</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Restic</tag>
+        <tag>备份</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>R语言常用代码</title>
     <url>/2024/R%E8%AF%AD%E8%A8%80%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/</url>
     <content><![CDATA[<h2 id="基本处理"><a href="#基本处理" class="headerlink" title="基本处理"></a>基本处理</h2><h3 id="数据清理"><a href="#数据清理" class="headerlink" title="数据清理"></a>数据清理</h3><h4 id="删除包含空值的个案"><a href="#删除包含空值的个案" class="headerlink" title="删除包含空值的个案"></a>删除包含空值的个案</h4><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">data_cache <span class="operator">&lt;-</span> database_group<span class="punctuation">[</span>complete.cases<span class="punctuation">(</span>database_group<span class="operator">$</span>group<span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure></div>
@@ -379,6 +379,20 @@
       </categories>
       <tags>
         <tag>R</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UNRAID 为 Docker 设置全局代理</title>
+    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
+<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">HTTP_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br><span class="line"><span class="attr">HTTPS_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>UNRAID</tag>
+        <tag>Docker</tag>
+        <tag>代理</tag>
       </tags>
   </entry>
   <entry>
@@ -521,18 +535,6 @@
       </tags>
   </entry>
   <entry>
-    <title>中文催稿信</title>
-    <url>/2024/%E4%B8%AD%E6%96%87%E5%82%AC%E7%A8%BF%E4%BF%A1/</url>
-    <content><![CDATA[<p>尊敬的【xxx杂志】编辑：<br>    您好！<br>    我于【xx年xx月xx日】向贵刊来稿《xxxxx》一份（稿件号：xxx），稿件已进入专家外审3月余，状态未更新，来信主要想咨询稿件是否有进一步修改意见，以便尽早按意见调整修改稿件。<br>    感谢您在百忙中抽空查看此信，我非常期待您的回复，并衷心希望论文能顺利在贵刊发表。祝您工作顺利，万事顺意!<br>    此致，<br>敬礼！<br>xxxx医院 xxx（右对齐）<br>xx年xx月xx日（右对齐）</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>投稿</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>倾向性评分匹配 (Propensity Score Matching, PSM)</title>
     <url>/2024/%E5%80%BE%E5%90%91%E6%80%A7%E8%AF%84%E5%88%86%E5%8C%B9%E9%85%8D%EF%BC%88Propensity%20Score%20Matching,%20PSM%EF%BC%89/</url>
     <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>研究类型：①实验性研究；②观察性研究</p>
@@ -560,17 +562,15 @@
       </tags>
   </entry>
   <entry>
-    <title>UNRAID 为 Docker 设置全局代理</title>
-    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
-    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
-<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">HTTP_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br><span class="line"><span class="attr">HTTPS_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br></pre></td></tr></table></figure></div>]]></content>
+    <title>中文催稿信</title>
+    <url>/2024/%E4%B8%AD%E6%96%87%E5%82%AC%E7%A8%BF%E4%BF%A1/</url>
+    <content><![CDATA[<p>尊敬的【xxx杂志】编辑：<br>    您好！<br>    我于【xx年xx月xx日】向贵刊来稿《xxxxx》一份（稿件号：xxx），稿件已进入专家外审3月余，状态未更新，来信主要想咨询稿件是否有进一步修改意见，以便尽早按意见调整修改稿件。<br>    感谢您在百忙中抽空查看此信，我非常期待您的回复，并衷心希望论文能顺利在贵刊发表。祝您工作顺利，万事顺意!<br>    此致，<br>敬礼！<br>xxxx医院 xxx（右对齐）<br>xx年xx月xx日（右对齐）</p>
+]]></content>
       <categories>
-        <category>计算机</category>
+        <category>科研</category>
       </categories>
       <tags>
-        <tag>UNRAID</tag>
-        <tag>Docker</tag>
-        <tag>代理</tag>
+        <tag>投稿</tag>
       </tags>
   </entry>
   <entry>
@@ -607,6 +607,32 @@
         <tag>MacOS</tag>
         <tag>zsh</tag>
         <tag>bash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS 无法开启“家人共享”</title>
+    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
+    <content><![CDATA[<div align="center"> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/IMG_5988.webp"
+                      style="zoom : 20%" 
+                > </div>
+
+
+<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>找到icloud设置</p>
+<p>找到管理你的icloud</p>
+<p>找到家人共享</p>
+<p>关掉</p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>iCloud</tag>
+        <tag>家人共享</tag>
       </tags>
   </entry>
   <entry>
@@ -672,23 +698,6 @@
       </tags>
   </entry>
   <entry>
-    <title>青龙面板使用浏览器抓取京东 Cookie</title>
-    <url>/2024/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E4%BA%AC%E4%B8%9CCookie/</url>
-    <content><![CDATA[<p>Chrome  隐私模式 打开<a class="link"   href="https://m.jd.com/]()" >京东 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>按F12键打开开发者工具,点击Network</p>
-<p>登陆</p>
-<p>复制cookie，我们只需要 <code>pt_pin=xxxx;pt_key=xxxx;</code>这一段，两个分号必不可少</p>
-<p>存储于 <code>JD_COOKIE</code>变量中，多个账号以相同名称再建变量即可</p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>青龙面板</tag>
-        <tag>京东</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>更改 Mac 文件的默认打开方式</title>
     <url>/2024/%E6%9B%B4%E6%94%B9%20Mac%20%E6%96%87%E4%BB%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[<h2 id="更改某一个文件的默认打开方式"><a href="#更改某一个文件的默认打开方式" class="headerlink" title="更改某一个文件的默认打开方式"></a>更改某一个文件的默认打开方式</h2><p>选中文件后<code>右键</code> → 按下<code>Option 键</code> → <code>始终以此方式打开</code></p>
@@ -718,29 +727,20 @@
       </tags>
   </entry>
   <entry>
-    <title>iOS 无法开启“家人共享”</title>
-    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
-    <content><![CDATA[<div align="center"> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/IMG_5988.webp"
-                      style="zoom : 20%" 
-                > </div>
-
-
-<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>找到icloud设置</p>
-<p>找到管理你的icloud</p>
-<p>找到家人共享</p>
-<p>关掉</p>
+    <title>青龙面板使用浏览器抓取京东 Cookie</title>
+    <url>/2024/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E4%BA%AC%E4%B8%9CCookie/</url>
+    <content><![CDATA[<p>Chrome  隐私模式 打开<a class="link"   href="https://m.jd.com/]()" >京东 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>按F12键打开开发者工具,点击Network</p>
+<p>登陆</p>
+<p>复制cookie，我们只需要 <code>pt_pin=xxxx;pt_key=xxxx;</code>这一段，两个分号必不可少</p>
+<p>存储于 <code>JD_COOKIE</code>变量中，多个账号以相同名称再建变量即可</p>
 ]]></content>
       <categories>
         <category>计算机</category>
       </categories>
       <tags>
-        <tag>iOS</tag>
-        <tag>iCloud</tag>
-        <tag>家人共享</tag>
+        <tag>青龙面板</tag>
+        <tag>京东</tag>
       </tags>
   </entry>
 </search>
