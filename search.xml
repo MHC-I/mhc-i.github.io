@@ -38,23 +38,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GPT 中译英指令</title>
-    <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
-<blockquote>
-<p>我想让你充当一名科学的英汉翻译，我会向你提供一些英文段落，你的任务是准确、学术性地将这些段落翻译成中文。翻译后不要重复原文提供的段落。你应该使用人工智能工具，如自然语言处理，以及有关有效写作技巧的修辞知识和经验来回答。以下是我提供的段落，请告诉我是用什么语言写的，然后翻译：</p>
-</blockquote>
-<p>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；3. 确保语言的逻辑关系准确，条理清晰；4. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；5. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>GPT</tag>
-        <tag>翻译</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo发布之后GitHub Pages自定义域名失效</title>
     <url>/2024/Hexo%E5%8F%91%E5%B8%83%E4%B9%8B%E5%90%8EGitHub%20Pages%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%A4%B1%E6%95%88/</url>
     <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>每次<code>hexo deploy</code>之后，访问自己的GitHub Pages自定义域名会404，重新查看仓库的设置发现Custom domain项变成空白</p>
@@ -104,38 +87,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MacOS 鼠标快速切屏</title>
-    <url>/2024/MacOS%20%E9%BC%A0%E6%A0%87%E5%BF%AB%E9%80%9F%E5%88%87%E5%B1%8F/</url>
-    <content><![CDATA[<ol>
-<li><p>系统设置→搜索栏输入<code>键盘和鼠标快捷键</code>→点击<code>键盘和鼠标快捷键</code></p>
-<p> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-12%2023.09.41.png"
-                      alt="截屏2024-12-12 23.09.41"
-                ></p>
-</li>
-<li><p>将调度中心鼠标快捷键设置为<code>鼠标3键</code></p>
-</li>
-<li><p>每次点击鼠标中键打开调度中心，快速切换程序</p>
-<p> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-12%2023.06.52.png"
-                      alt="截屏2024-12-12 23.06.52"
-                ></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-        <tag>鼠标</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux 删除子目录下特定后缀文件</title>
     <url>/2024/Linux%20%E5%88%A0%E9%99%A4%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%89%B9%E5%AE%9A%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">find /path/to/parent_directory -<span class="built_in">type</span> f -name <span class="string">&quot;*.lrc&quot;</span> -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br><span class="line">- <span class="built_in">type</span> f <span class="comment"># 指定文件类型为普通文件， f（普通文件）、d（目录）、l（符号链接）</span></span><br><span class="line">- name <span class="comment"># 按文件名查找，支持使用通配符 * 和 ?</span></span><br><span class="line">-<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \; <span class="comment">#-exec 选项允许你执行一个命令，&#123;&#125; 将会被匹配到的文件名替代，\; 表示命令结束</span></span><br></pre></td></tr></table></figure></div>
@@ -173,6 +124,55 @@
       <tags>
         <tag>Navidrome</tag>
         <tag>专辑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MacOS 鼠标快速切屏</title>
+    <url>/2024/MacOS%20%E9%BC%A0%E6%A0%87%E5%BF%AB%E9%80%9F%E5%88%87%E5%B1%8F/</url>
+    <content><![CDATA[<ol>
+<li><p>系统设置→搜索栏输入<code>键盘和鼠标快捷键</code>→点击<code>键盘和鼠标快捷键</code></p>
+<p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-12%2023.09.41.png"
+                      alt="截屏2024-12-12 23.09.41"
+                ></p>
+</li>
+<li><p>将调度中心鼠标快捷键设置为<code>鼠标3键</code></p>
+</li>
+<li><p>每次点击鼠标中键打开调度中心，快速切换程序</p>
+<p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-12-12%2023.06.52.png"
+                      alt="截屏2024-12-12 23.06.52"
+                ></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>鼠标</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GPT 中译英指令</title>
+    <url>/2024/GPT%20%E4%B8%AD%E8%AF%91%E8%8B%B1%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<p>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in English and your task is to accurately and academically translate the paragraphs only into Chinese. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I’ll give you my paragraphs as follows, tell me what language it is written in, and then translate:</p>
+<blockquote>
+<p>我想让你充当一名科学的英汉翻译，我会向你提供一些英文段落，你的任务是准确、学术性地将这些段落翻译成中文。翻译后不要重复原文提供的段落。你应该使用人工智能工具，如自然语言处理，以及有关有效写作技巧的修辞知识和经验来回答。以下是我提供的段落，请告诉我是用什么语言写的，然后翻译：</p>
+</blockquote>
+<p>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；3. 确保语言的逻辑关系准确，条理清晰；4. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；5. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>GPT</tag>
+        <tag>翻译</tag>
       </tags>
   </entry>
   <entry>
@@ -300,18 +300,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Restic 文件备份</title>
-    <url>/2024/Restic%20%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仓库密码</span></span><br><span class="line"><span class="built_in">export</span> RESTIC_PASSWORD=</span><br><span class="line"><span class="comment"># appdata</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/cache/appdata</span><br><span class="line"><span class="comment"># music</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/disk1/PTdown/bz/music</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>Restic</tag>
-        <tag>备份</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>RStudio 绘图中文字符乱码问题</title>
     <url>/2024/R%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><div class="highlight-container" data-rel="R"><figure class="iseeu highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;Cairo&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></div>
@@ -333,6 +321,20 @@
         <tag>R</tag>
         <tag>绘图</tag>
         <tag>Cairo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UNRAID 为 Docker 设置全局代理</title>
+    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
+<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">HTTP_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br><span class="line"><span class="attr">HTTPS_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>UNRAID</tag>
+        <tag>Docker</tag>
+        <tag>代理</tag>
       </tags>
   </entry>
   <entry>
@@ -424,6 +426,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Restic 文件备份</title>
+    <url>/2024/Restic%20%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仓库密码</span></span><br><span class="line"><span class="built_in">export</span> RESTIC_PASSWORD=</span><br><span class="line"><span class="comment"># appdata</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/cache/appdata</span><br><span class="line"><span class="comment"># music</span></span><br><span class="line">restic -r /mnt/disk2/backup backup /mnt/disk1/PTdown/bz/music</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Restic</tag>
+        <tag>备份</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Zotero 在引用中添加 PMID</title>
     <url>/2024/Zotero%20%E5%9C%A8%E5%BC%95%E7%94%A8%E4%B8%AD%E6%B7%BB%E5%8A%A0%20PMID/</url>
     <content><![CDATA[<p>外文的引文格式一般都要求 URL、DOI 等，但是最近投的一个杂志要求我在引文中添加PMID，我的方法大致如下</p>
@@ -472,32 +486,6 @@
         <tag>Zotero</tag>
         <tag>Pubmed</tag>
         <tag>PMID</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>UNRAID 为 Docker 设置全局代理</title>
-    <url>/2024/UNRAID%E4%B8%BADocker%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
-    <content><![CDATA[<p>在增加docker时添加下面两个变量</p>
-<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">HTTP_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br><span class="line"><span class="attr">HTTPS_PROXY</span>=http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">20171</span></span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>UNRAID</tag>
-        <tag>Docker</tag>
-        <tag>代理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>中文催稿信</title>
-    <url>/2024/%E4%B8%AD%E6%96%87%E5%82%AC%E7%A8%BF%E4%BF%A1/</url>
-    <content><![CDATA[<p>尊敬的【xxx杂志】编辑：<br>    您好！<br>    我于【xx年xx月xx日】向贵刊来稿《xxxxx》一份（稿件号：xxx），稿件已进入专家外审3月余，状态未更新，来信主要想咨询稿件是否有进一步修改意见，以便尽早按意见调整修改稿件。<br>    感谢您在百忙中抽空查看此信，我非常期待您的回复，并衷心希望论文能顺利在贵刊发表。祝您工作顺利，万事顺意!<br>    此致，<br>敬礼！<br>xxxx医院 xxx（右对齐）<br>xx年xx月xx日（右对齐）</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>投稿</tag>
       </tags>
   </entry>
   <entry>
@@ -610,61 +598,6 @@
       </tags>
   </entry>
   <entry>
-    <title>iOS 无法开启“家人共享”</title>
-    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
-    <content><![CDATA[<div align="center"> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/IMG_5988.webp"
-                      style="zoom : 20%" 
-                > </div>
-
-
-<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>找到icloud设置</p>
-<p>找到管理你的icloud</p>
-<p>找到家人共享</p>
-<p>关掉</p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-        <tag>iCloud</tag>
-        <tag>家人共享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更改 Mac 文件的默认打开方式</title>
-    <url>/2024/%E6%9B%B4%E6%94%B9%20Mac%20%E6%96%87%E4%BB%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="更改某一个文件的默认打开方式"><a href="#更改某一个文件的默认打开方式" class="headerlink" title="更改某一个文件的默认打开方式"></a>更改某一个文件的默认打开方式</h2><p>选中文件后<code>右键</code> → 按下<code>Option 键</code> → <code>始终以此方式打开</code></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-19%2019.33.08.webp"
-                      alt="截屏2024-11-19 19.33.08"
-                ></p>
-<p>&lt; 该方法仅适用于所选择的这一个文件，并不适用于其他文件（包括同一类型的文件），于是才会有第二种方法</p>
-<h2 id="更改同类型文件的默认打开方式"><a href="#更改同类型文件的默认打开方式" class="headerlink" title="更改同类型文件的默认打开方式"></a>更改同类型文件的默认打开方式</h2><p>选中文件后<code>右键</code> →<code>显示简介</code>→<code>打开方式</code>→选择需要的应用后点击<code>全部更改</code></p>
-<div align="center"> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-19%2019.37.59.webp"
-                      style="zoom : 40%" 
-                > </div>
-
-<p>引文：<br><a class="link"   href="https://sspai.com/post/28394" >基础教程：如何更改 Mac 文件的默认打开方式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>计算机</category>
-      </categories>
-      <tags>
-        <tag>MacOS</tag>
-        <tag>文件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>投稿系统导航</title>
     <url>/2024/%E6%8A%95%E7%A8%BF%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%88%AA/</url>
     <content><![CDATA[<h2 id="中文"><a href="#中文" class="headerlink" title="中文"></a>中文</h2><table>
@@ -727,6 +660,47 @@
       </tags>
   </entry>
   <entry>
+    <title>中文催稿信</title>
+    <url>/2024/%E4%B8%AD%E6%96%87%E5%82%AC%E7%A8%BF%E4%BF%A1/</url>
+    <content><![CDATA[<p>尊敬的【xxx杂志】编辑：<br>    您好！<br>    我于【xx年xx月xx日】向贵刊来稿《xxxxx》一份（稿件号：xxx），稿件已进入专家外审3月余，状态未更新，来信主要想咨询稿件是否有进一步修改意见，以便尽早按意见调整修改稿件。<br>    感谢您在百忙中抽空查看此信，我非常期待您的回复，并衷心希望论文能顺利在贵刊发表。祝您工作顺利，万事顺意!<br>    此致，<br>敬礼！<br>xxxx医院 xxx（右对齐）<br>xx年xx月xx日（右对齐）</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>投稿</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更改 Mac 文件的默认打开方式</title>
+    <url>/2024/%E6%9B%B4%E6%94%B9%20Mac%20%E6%96%87%E4%BB%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="更改某一个文件的默认打开方式"><a href="#更改某一个文件的默认打开方式" class="headerlink" title="更改某一个文件的默认打开方式"></a>更改某一个文件的默认打开方式</h2><p>选中文件后<code>右键</code> → 按下<code>Option 键</code> → <code>始终以此方式打开</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-19%2019.33.08.webp"
+                      alt="截屏2024-11-19 19.33.08"
+                ></p>
+<p>&lt; 该方法仅适用于所选择的这一个文件，并不适用于其他文件（包括同一类型的文件），于是才会有第二种方法</p>
+<h2 id="更改同类型文件的默认打开方式"><a href="#更改同类型文件的默认打开方式" class="headerlink" title="更改同类型文件的默认打开方式"></a>更改同类型文件的默认打开方式</h2><p>选中文件后<code>右键</code> →<code>显示简介</code>→<code>打开方式</code>→选择需要的应用后点击<code>全部更改</code></p>
+<div align="center"> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/%E6%88%AA%E5%B1%8F2024-11-19%2019.37.59.webp"
+                      style="zoom : 40%" 
+                > </div>
+
+<p>引文：<br><a class="link"   href="https://sspai.com/post/28394" >基础教程：如何更改 Mac 文件的默认打开方式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>MacOS</tag>
+        <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>青龙面板使用浏览器抓取京东 Cookie</title>
     <url>/2024/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E4%BA%AC%E4%B8%9CCookie/</url>
     <content><![CDATA[<p>Chrome  隐私模式 打开<a class="link"   href="https://m.jd.com/]()" >京东 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
@@ -741,6 +715,32 @@
       <tags>
         <tag>青龙面板</tag>
         <tag>京东</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS 无法开启“家人共享”</title>
+    <url>/2024/%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E2%80%9C%E5%AE%B6%E4%BA%BA%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
+    <content><![CDATA[<div align="center"> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/2024/IMG_5988.webp"
+                      style="zoom : 20%" 
+                > </div>
+
+
+<p>打开<a class="link"   href="https://account.apple.com/" >网页版Apple ID <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>找到icloud设置</p>
+<p>找到管理你的icloud</p>
+<p>找到家人共享</p>
+<p>关掉</p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>iCloud</tag>
+        <tag>家人共享</tag>
       </tags>
   </entry>
 </search>
